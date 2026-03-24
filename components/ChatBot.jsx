@@ -7,59 +7,131 @@ const devJokes = [
   "Why do programmers prefer dark mode? Because light attracts bugs! 🐛",
   "There are only 10 types of people: those who understand binary and those who don't 🤓",
   "A SQL query walks into a bar, sees two tables and asks... 'Can I JOIN you?'",
-  "!false — it's funny because it's true 😂",
   "I told my client I'd have the site ready by Monday. I didn't say WHICH Monday 💀",
   "Why was the JavaScript developer sad? Because he didn't Node how to Express himself 😅",
   "git commit -m 'fixed bug' // narrator: he did not fix the bug",
   "Debugging: removing bugs. Programming: adding bugs. The circle of dev life 🔄",
   "Client: 'Can you make the logo bigger?' Me: *internal screaming* 🫠",
   "AI replaced my job... of explaining to clients why something takes more than 5 minutes",
+  "My code works, I don't know why. My code doesn't work, I don't know why. 🤷‍♂️",
+  "A programmer's wife tells him: 'Go to the store and get a loaf of bread. If they have eggs, get a dozen.' He comes home with 12 loaves of bread."
 ];
 
-const botResponses = {
-  greeting: [
-    "Hey! 👋 I'm Devil Bot — Vicky's AI sidekick. Ask me about services, pricing, or just say 'joke' for a laugh!",
-    "Yo! Welcome to Devil Labs 🔥 I can help you with projects, pricing, or drop some dev humor. What's up?",
+const knowledgeBase = {
+  greetings: [
+    "Hey there! 👋 I'm Devil Bot, Vicky's AI agent. How can I help you today?",
+    "Yo! Welcome to Devil Labs 🔥 I'm an AI designed to help you navigate Vicky's services. What's on your mind?",
+    "Hello! I can assist you with web development queries, AI automation details, pricing, or just dropping some dev humor. What do you need?",
+    "Greetings, human. 🤖 I am Devil Bot. Ready to deploy some knowledge about Vicky's coding skills. What do you want to know?"
   ],
   services: [
-    "We build 6 things really well:\n\n🌐 AI Websites (₹5K+)\n🤖 Agentic AI Systems\n⚡ Business Automation\n💬 Chatbots & Voice AI\n🛒 E-Commerce Stores\n📱 SaaS Products\n\nWhich one sounds interesting? Or type 'pricing' for rates!",
+    "Vicky specializes in 6 core areas:\n\n1. 🌐 AI Websites (Next.js/React)\n2. 🤖 Agentic AI Systems\n3. ⚡ Business Automation (CRM/Invoicing)\n4. 💬 Custom Chatbots & Voice AI\n5. 🛒 E-Commerce Platforms\n6. 📱 SaaS MVPs\n\nAre you looking to build something specific, or do you want to talk pricing?",
+    "We build production-ready digital tools. Whether you need a sleek landing page, a complex SaaS MVP, or an AI agent to handle your customer support, Vicky can code it. What industry are you in?",
+    "Services include full-stack web development, frontend magic with Framer Motion, and hardcore backend automation with Python/Node.js. Want to see some examples or check rates?"
   ],
   pricing: [
-    "💰 Here's Vicky's pricing:\n\n• Starter: ₹5,000 — Landing page / Portfolio\n• Growth: ₹15,000 — Full website + CRM + Automation\n• Enterprise: ₹50,000+ — AI Systems / SaaS / Multi-platform\n\nTimeline: 3 days to 6 weeks depending on scope.\n\nWant to start? Type 'contact' or scroll to the form below! 👇",
+    "💰 Pricing is structured for the Indian market but scales globally:\n\n• Starter (₹5K): Landing pages & portfolios (3-5 days)\n• Growth (₹15K): Full websites with CRM & automation workflows (1-2 weeks)\n• Enterprise (₹50K+): Custom SaaS, Agentic AI, multi-platform builds (3-6 weeks)\n\nWhich tier fits your current project?",
+    "Vicky's rates are highly competitive. A simple, high-performing site starts at ₹5,000. Full business automation and CRM setups run around ₹15,000. For complex AI systems, we scope it out starting at ₹50,000. Want me to connect you with Vicky for a custom quote?",
+    "It depends on the scope! From ₹5k for a lightning-fast landing page to ₹50k+ for an enterprise AI system. If you describe your project, I can give you a better estimate. Or type 'contact' to talk to the human."
   ],
   contact: [
-    "📧 Email: vickyykumar14@gmail.com\n📱 WhatsApp: +91 8102099678\n🌐 Portfolio: vickyiitp.tech\n\nOr just fill the contact form at the bottom of this page! I'll make sure Vicky responds within 24 hours 🚀",
+    "Ready to build? 🚀\n\n📧 Email: vickyykumar14@gmail.com\n📱 WhatsApp: +91 8102099678\n🌐 Book a call via the contact form at the bottom of the page.\n\nVicky usually responds exactly when you need him to.",
+    "You can reach the human (Vicky) directly at:\nEmail: vickyykumar14@gmail.com\nPhone/WhatsApp: +91 8102099678\n\nI recommend WhatsApp—he practically lives in the terminal and WhatsApp.",
+    "Just scroll down to the contact form! Or if you're in a hurry:\n📞 +91 8102099678\n✉️ vickyykumar14@gmail.com"
   ],
-  joke: () => devJokes[Math.floor(Math.random() * devJokes.length)],
   ai: [
-    "Oh, you want AI? You came to the right place 🧠\n\nVicky builds:\n• GPT-powered chatbots (like me but smarter 😅)\n• Autonomous AI agents (they work while you sleep)\n• Voice AI receptionists\n• AI content generators\n• Custom LLM integrations\n\nType 'pricing' to see rates or 'contact' to get started!",
+    "Ah, AI. My favorite subject. 🧠\n\nVicky builds autonomous agents (like me, but tailored to your business), WhatsApp GPT bots, voice receptionists, and LLM integrations. We use LangChain, OpenAI, Claude, and local models. What kind of AI do you need?",
+    "We don't just use AI; we build it into your workflows. Imagine a bot that books appointments, qualifies sales leads, and updates your CRM while you sleep. That's what Vicky codes. Want to know the price for that?",
+    "AI development includes RAG applications, custom knowledge base chatbots, and automated content pipelines. We basically clone your best employee into code."
   ],
   website: [
-    "Websites are Vicky's bread and butter 🍞\n\nWhat you get:\n✅ Custom design (no templates)\n✅ SEO optimized (Core Web Vitals 95+)\n✅ Mobile-first responsive\n✅ Analytics dashboard\n✅ Source code ownership\n\nStarting at just ₹5,000. Type 'contact' to begin! ",
+    "Vicky's websites aren't just templates. They are custom-coded Next.js/React applications with 3D effects, Framer Motion animations, and 95+ Core Web Vitals scores. Starting at ₹5K. Want to start a project?",
+    "If you want a site that loads instantly and makes your competitors cry, you're in the right place. We use Tailwind CSS, Next.js, and extreme SEO optimization. Type 'pricing' to see what it costs."
   ],
   automation: [
-    "Automation = delete the boring ⚡\n\nWhat Vicky automates:\n• CRM pipelines → auto follow-ups\n• Invoice → auto payment reminders\n• Social media → scheduled posting\n• Email → drip campaigns\n• Inventory → auto reorder\n\nOne-time build, runs forever. Type 'pricing' or 'contact'!",
+    "Automation means doing more with less code. ⚡\n\nVicky automates email drip campaigns, auto-generates invoices via Google Sheets, syncs bookings, and tracks competitor pricing. It's like magic, but it's just Python and webhooks.",
+    "Tired of manual data entry? Vicky can build systems that connect your lead forms directly to your CRM, send auto-WhatsApp follow-ups, and alert you on Slack. Best ₹15K you'll ever spend."
   ],
-  who: [
-    "Vicky Kumar 🎓\n\n• IIT Patna (CSE, Class 2027)\n• Founded Devil Labs\n• 20+ projects on GitHub\n• 1+ year building production code\n• Tech: Next.js, React, Python, AI/ML\n\nThis guy ships fast. Like, scary fast. 🚀",
+  who_is_vicky: [
+    "Vicky Kumar is a developer, prompt engineer, and the founder of Devil Labs. He studies Computer Science at IIT Patna (Class of '27). He has over 20 production apps on his GitHub and essentially breathes code.",
+    "Vicky? He's the guy who built me. Developer by day, automation architect by night. IIT Patna student. He focuses on high-performance web apps and AI systems.",
+    "Vicky is an IIT Patna CSE student who decided normal websites were boring. So he started Devil Labs to build AI-driven, highly animated, ultra-fast web tools."
   ],
-  default: [
-    "Hmm, I'm not sure about that one 🤔\n\nTry asking about:\n• 'services' — what we build\n• 'pricing' — how much it costs\n• 'contact' — reach Vicky\n• 'joke' — I'm actually funny\n• 'ai' — AI development\n• 'website' — web development\n• 'who' — about Vicky",
+  acknowledgement: [
+    "Got it. I've noted that down.",
+    "Makes sense.",
+    "Interesting.",
+    "I understand."
   ],
+  fallback: [
+    "I'm an advanced AI, but I missed that. Try asking about 'services', 'pricing', 'contact', or say 'tell me a joke'.",
+    "My simulated neural nets didn't catch that context. Did you want to know about web development, AI automation, or Vicky's rates?",
+    "Hmm 🤔... you can either ask me about Devil Labs' services, pricing, or I can tell you a developer joke.",
+    "I'm continuously learning! While I process that, would you like to hear about our AI services or maybe a quick coding joke?"
+  ]
 };
 
-function getResponse(input) {
+// Advanced context-aware mock AI logic
+function getResponse(input, messageHistory = []) {
   const lower = input.toLowerCase().trim();
-  if (lower.match(/hi|hey|hello|sup|yo|hola/)) return botResponses.greeting[Math.floor(Math.random() * botResponses.greeting.length)];
-  if (lower.match(/service|what.*do|what.*build|offer/)) return botResponses.services[0];
-  if (lower.match(/price|cost|rate|how much|budget|₹|rs|rupee|charge|fee/)) return botResponses.pricing[0];
-  if (lower.match(/contact|email|phone|whatsapp|reach|call|hire|mail/)) return botResponses.contact[0];
-  if (lower.match(/joke|funny|laugh|lol|haha|humor|meme/)) return botResponses.joke();
-  if (lower.match(/ai|artificial|agent|chatbot|gpt|llm|machine learn/)) return botResponses.ai[0];
-  if (lower.match(/web|site|landing|page|react|next/)) return botResponses.website[0];
-  if (lower.match(/automat|workflow|zapier|n8n|crm|bot/)) return botResponses.automation[0];
-  if (lower.match(/who|vicky|about|iit|patna|devil|founder/)) return botResponses.who[0];
-  return botResponses.default[0];
+  const pastUserDocs = messageHistory.filter(m => m.role === 'user').map(m => m.text.toLowerCase());
+  const chatCount = pastUserDocs.length;
+  
+  // Lead Generation Triggers
+  const isEmail = lower.match(/[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}/);
+  const isPhone = lower.match(/\+?\d{10,14}/);
+  
+  if (isEmail || isPhone) {
+    return "Awesome. I've captured your contact info safely 🔒. Vicky will reach out to you within 24 hours to discuss this further. Anything else you'd like to ask in the meantime?";
+  }
+  
+  // Intent detection via regex matching
+  const intents = {
+    greeting: /\b(hi|hey|hello|sup|yo|hola|greetings)\b/i,
+    services: /(service|what.*do|what.*build|offer|help with|can you make)/i,
+    pricing: /(price|cost|rate|much|budget|₹|rs|rupee|charge|fee|quote)/i,
+    contact: /(contact|email|phone|whatsapp|reach|call|hire|mail|touch)/i,
+    joke: /(joke|funny|laugh|lol|haha|humor|meme|entertain)/i,
+    ai: /\b(ai|artificial intelligence|agent|chatbot|gpt|llm|machine learning|ml)\b/i,
+    website: /(web|site|landing|page|react|next|frontend)/i,
+    automation: /(automat|workflow|zapier|n8n|crm|system|process)/i,
+    who: /(who|vicky|about|iit|patna|devil|founder|creator)/i,
+  };
+
+  let matchedIntent = null;
+  for (const [intent, regex] of Object.entries(intents)) {
+    if (regex.test(lower)) {
+      matchedIntent = intent;
+      break;
+    }
+  }
+
+  // Dynamic routing based on intent
+  if (matchedIntent) {
+    if (matchedIntent === 'joke') {
+      return devJokes[Math.floor(Math.random() * devJokes.length)];
+    }
+    
+    // For recognized intents, get a random variant to feel more 'alive'
+    const responses = knowledgeBase[matchedIntent === 'who' ? 'who_is_vicky' : matchedIntent];
+    let reply = responses[Math.floor(Math.random() * responses.length)];
+    
+    // Add lead gen push if they ask about pricing/services after 1 message
+    if ((matchedIntent === 'pricing' || matchedIntent === 'services' || matchedIntent === 'website' || matchedIntent === 'ai') && chatCount > 1 && Math.random() > 0.5) {
+      reply += "\n\nBy the way, if you have a specific project in mind, drop your email or number right here in the chat and I'll have Vicky contact you to scope it out. 👇";
+    }
+    
+    return reply;
+  }
+  
+  // Contextual fallback: if they just say short agreement words
+  if (lower.length < 5 || lower.match(/^(yes|no|yeah|nope|ok|okay|cool|nice|wow|sure)$/)) {
+    return knowledgeBase.acknowledgement[Math.floor(Math.random() * knowledgeBase.acknowledgement.length)] + 
+      " Want to talk about pricing, or looking for specific services?";
+  }
+
+  // Pure fallback
+  return knowledgeBase.fallback[Math.floor(Math.random() * knowledgeBase.fallback.length)];
 }
 
 export default function ChatBot() {
@@ -83,15 +155,20 @@ export default function ChatBot() {
   const send = () => {
     if (!input.trim()) return;
     const userMsg = input.trim();
-    setMessages(prev => [...prev, { role: "user", text: userMsg, ts: Date.now() }]);
     setInput("");
     setIsTyping(true);
 
-    setTimeout(() => {
-      const reply = getResponse(userMsg);
-      setMessages(prev => [...prev, { role: "bot", text: reply, ts: Date.now() }]);
-      setIsTyping(false);
-    }, 600 + Math.random() * 800);
+    setMessages(prev => {
+      const newHistory = [...prev, { role: "user", text: userMsg, ts: Date.now() }];
+      
+      setTimeout(() => {
+        const reply = getResponse(userMsg, newHistory);
+        setMessages(current => [...current, { role: "bot", text: reply, ts: Date.now() }]);
+        setIsTyping(false);
+      }, 600 + Math.random() * 800);
+      
+      return newHistory;
+    });
   };
 
   const quickActions = ["Services", "Pricing", "Contact", "Joke"];
@@ -185,13 +262,17 @@ export default function ChatBot() {
                 <button
                   key={action}
                   onClick={() => {
-                    setMessages(prev => [...prev, { role: "user", text: action, ts: Date.now() }]);
+                    const userMsg = action;
                     setIsTyping(true);
-                    setTimeout(() => {
-                      const reply = getResponse(action);
-                      setMessages(prev => [...prev, { role: "bot", text: reply, ts: Date.now() }]);
-                      setIsTyping(false);
-                    }, 600 + Math.random() * 800);
+                    setMessages(prev => {
+                      const newHistory = [...prev, { role: "user", text: userMsg, ts: Date.now() }];
+                      setTimeout(() => {
+                        const reply = getResponse(userMsg, newHistory);
+                        setMessages(current => [...current, { role: "bot", text: reply, ts: Date.now() }]);
+                        setIsTyping(false);
+                      }, 600 + Math.random() * 800);
+                      return newHistory;
+                    });
                   }}
                   className="text-[10px] font-mono px-2.5 py-1 border border-white/10 text-white/40 rounded-full hover:border-accent/30 hover:text-accent/70 transition-colors"
                 >

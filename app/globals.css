@@ -246,15 +246,39 @@ body::after {
 /* ═══════════════════════════════════════
    TEXT GLOW EFFECT
    For hero headings
-   ═══════════════════════════════════════ */
-
-.text-glow {
-  text-shadow:
-    0 0 20px rgba(207,181,59,0.12),
-    0 0 60px rgba(207,181,59,0.05),
-    0 4px 12px rgba(0,0,0,0.5);
+   ═══════════════════════════════════════*/
+/* ── Custom Utilities ── */
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2);
+  }
+  .accent-glow {
+    text-shadow: 0 0 15px rgba(207, 181, 59, 0.4), 0 0 30px rgba(207, 181, 59, 0.2);
+  }
+  
+  /* 3D Candy Blob Animation Classes */
+  .candy-blob {
+    filter: blur(60px);
+    mix-blend-mode: color-dodge;
+    will-change: transform, border-radius;
+    animation: blob-morph 12s infinite cubic-bezier(0.4, 0, 0.2, 1), blob-float 15s infinite ease-in-out;
+  }
 }
 
+/* 3D Candy Blob Keyframes (GPU Accelerated) */
+@keyframes blob-morph {
+  0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+  33% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+  66% { border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%; }
+  100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+}
+
+@keyframes blob-float {
+  0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  33% { transform: translate(30px, -50px) scale(1.1) rotate(15deg); }
+  66% { transform: translate(-20px, 20px) scale(0.9) rotate(-10deg); }
+  100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+}
 /* ═══════════════════════════════════════
    UTILITY ANIMATIONS
    ═══════════════════════════════════════ */
