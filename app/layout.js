@@ -2,6 +2,7 @@ import Script from "next/script";
 import Navbar from "@/components/Navbar";
 import ChatBot from "@/components/ChatBot";
 import CustomCursor from "@/components/CustomCursor";
+import OfflinePopup from "@/components/OfflinePopup";
 import "./globals.css";
 
 export const metadata = {
@@ -54,6 +55,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-7BHY0YHBQ8" strategy="afterInteractive" />
         <Script id="gtag-init" strategy="afterInteractive">
           {`
@@ -66,6 +69,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="antialiased font-sans text-white selection:bg-accent/30 selection:text-white">
         <CustomCursor />
+        <OfflinePopup />
         <div className="relative z-10 mx-auto max-w-[1440px] w-full min-h-screen flex flex-col overflow-x-hidden">
           <Navbar />
           <main className="flex-1 w-full relative overflow-x-hidden">
