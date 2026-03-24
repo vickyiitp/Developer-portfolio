@@ -6,11 +6,9 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 
 /* Static imports for critical above-the-fold content */
-import EfficiencyEngine from "@/components/EfficiencyEngine";
 import SEOIndex from "@/components/SEOIndex";
 
 /* Dynamic imports for below-the-fold components (Optimizes 4.5s load time to < 1s) */
-const ServicesShowcase = dynamic(() => import("@/components/ServicesShowcase"), { ssr: false });
 const SkillsOrbit = dynamic(() => import("@/components/SkillsOrbit"), { ssr: false });
 const Testimonials = dynamic(() => import("@/components/Testimonials"), { ssr: false });
 const FounderNarrative = dynamic(() => import("@/components/FounderNarrative"), { ssr: false });
@@ -266,23 +264,6 @@ export default function Home() {
 
       {/* ═══ GLOW DIVIDER ═══ */}
       <GlowDivider />
-
-      {/* ═══ 2. EFFICIENCY ENGINE ═══ */}
-      <motion.div
-        id="workflow"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.8 }}
-        className="w-full relative overflow-hidden"
-      >
-        <EfficiencyEngine />
-      </motion.div>
-
-      <GlowDivider />
-
-      {/* ═══ 3. SERVICES SHOWCASE ═══ */}
-      <ServicesShowcase />
 
       {/* ═══ 4. SKILLS ORBIT ═══ */}
       <SkillsOrbit />
