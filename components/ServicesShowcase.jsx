@@ -231,7 +231,7 @@ export default function ServicesShowcase() {
           </div>
 
           <div className="mt-12 text-center">
-            <a href="#contact" className="inline-block px-10 py-4 bg-accent text-black font-sans font-medium tracking-widest text-sm uppercase hover:bg-white transition-all duration-300 transform hover:-translate-y-1">
+            <a href="/contact" className="inline-block px-10 py-4 bg-accent text-black font-sans font-medium tracking-widest text-sm uppercase hover:bg-white transition-all duration-300 transform hover:-translate-y-1">
               Start a Project →
             </a>
             <p className="font-sans text-white/50 text-xs mt-4">UPI · Bank Transfer · International Wire · Crypto accepted</p>

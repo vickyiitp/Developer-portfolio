@@ -12,12 +12,10 @@ import SEOIndex from "@/components/SEOIndex";
 /* Dynamic imports for below-the-fold components (Optimizes 4.5s load time to < 1s) */
 const ServicesShowcase = dynamic(() => import("@/components/ServicesShowcase"), { ssr: false });
 const SkillsOrbit = dynamic(() => import("@/components/SkillsOrbit"), { ssr: false });
-const ProjectInventory = dynamic(() => import("@/components/ProjectInventory"), { ssr: false });
 const Testimonials = dynamic(() => import("@/components/Testimonials"), { ssr: false });
 const FounderNarrative = dynamic(() => import("@/components/FounderNarrative"), { ssr: false });
 const SocialBento = dynamic(() => import("@/components/SocialBento"), { ssr: false });
 const FAQAccordion = dynamic(() => import("@/components/FAQAccordion"), { ssr: false });
-const ContactSection = dynamic(() => import("@/components/ContactSection"), { ssr: false });
 const Footer = dynamic(() => import("@/components/Footer"), { ssr: false });
 
 /* ═══════════════════════════════════════
@@ -245,7 +243,7 @@ export default function Home() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
             <motion.a
-              href="/#contact"
+              href="/contact"
               whileHover={{ y: -3, boxShadow: "0 8px 30px rgba(207,181,59,0.2)" }}
               className="w-full sm:w-auto px-8 py-3.5 bg-accent text-black font-sans font-medium text-sm md:text-base tracking-wide hover:bg-white hover:text-black transition-all duration-300 text-center"
               aria-label="Request Consultation with Vicky, IIT Patna Developer"
@@ -289,21 +287,7 @@ export default function Home() {
       {/* ═══ 4. SKILLS ORBIT ═══ */}
       <SkillsOrbit />
 
-      <GlowDivider />
 
-      {/* ═══ 5. PROJECT INVENTORY ═══ */}
-      <motion.div
-        id="projects"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.8 }}
-        className="w-full relative overflow-hidden"
-      >
-        <ProjectInventory />
-      </motion.div>
-
-      <GlowDivider />
 
       {/* ═══ 6. TESTIMONIALS ═══ */}
       <Testimonials />
@@ -333,16 +317,7 @@ export default function Home() {
         <FAQAccordion />
       </motion.div>
 
-      {/* ═══ 9. CONTACT — LEAD GEN ═══ */}
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.8 }}
-        className="w-full"
-      >
-        <ContactSection />
-      </motion.div>
+
 
       {/* ═══ 10. SEO DATA LAYER ═══ */}
       <SEOIndex />

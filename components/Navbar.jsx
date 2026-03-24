@@ -11,8 +11,8 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "Services", href: "/#services" },
     { name: "Workflow", href: "/#workflow" },
-    { name: "Devil Labs", href: "/#projects" },
-    { name: "Contact", href: "/#contact" },
+    { name: "Devil Labs", href: "/devillabs" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -41,7 +41,7 @@ export default function Navbar() {
       {/* Right: CTA Button (Desktop) */}
       <div className="hidden md:block">
         <Link 
-          href="/#contact"
+          href="/contact"
           className="px-6 py-2.5 text-sm font-sans font-light border border-accent/50 text-accent hover:bg-accent/10 transition-all duration-300 rounded-sm"
         >
           Request Consultation
@@ -71,7 +71,7 @@ export default function Navbar() {
             </Link>
           ))}
           <Link 
-            href="/#contact"
+            href="/contact"
             onClick={() => setIsOpen(false)}
             className="mt-4 px-8 py-3 w-full max-w-[200px] text-center text-sm font-sans font-light border border-[#CFB53B] text-[#CFB53B] hover:bg-[#CFB53B]/10 transition-all duration-300 rounded-sm"
           >
