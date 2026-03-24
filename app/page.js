@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform, useMotionValue, useSpring } from "framer-motion";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 
 /* Static imports for critical above-the-fold content */
 import EfficiencyEngine from "@/components/EfficiencyEngine";
@@ -187,13 +188,13 @@ export default function Home() {
               className="relative z-10 w-[240px] h-[320px] sm:w-[280px] sm:h-[380px] md:w-[350px] md:h-[450px] lg:w-[400px] lg:h-[550px] rounded-sm overflow-hidden border border-white/10 bg-white/5 flex items-center justify-center animate-subtle-float"
               aria-label="Vicky, IIT Patna Developer"
             >
-              <img
+              <Image
                 src="/profile.jpg"
                 alt="Vicky Kumar - Developer and Automation Architect, IIT Patna"
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out"
-                loading="eager"
-                width={400}
-                height={550}
+                priority={true}
+                fill
+                sizes="(max-width: 640px) 240px, (max-width: 768px) 280px, (max-width: 1024px) 350px, 400px"
               />
 
               {/* Ambient glow overlay */}

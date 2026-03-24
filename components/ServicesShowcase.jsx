@@ -141,7 +141,7 @@ export default function ServicesShowcase() {
                 <h3 className="font-heading text-3xl md:text-5xl font-bold text-white mt-2">{service.title}</h3>
                 <p className="font-sans text-accent/80 text-sm md:text-base italic mt-2">{service.tagline}</p>
               </div>
-              <div className="text-[10px] font-mono text-white/30 tracking-widest uppercase text-right hidden md:block">
+              <div className="text-[10px] font-mono text-white/50 tracking-widest uppercase text-right hidden md:block">
                 {service.tech}
               </div>
             </div>
@@ -179,12 +179,12 @@ export default function ServicesShowcase() {
             </div>
 
             {/* Deliverables */}
-            <div className="text-[11px] font-mono text-white/25 tracking-wider">
+            <div className="text-[11px] font-mono text-white/50 tracking-wider">
               DELIVERABLES: {service.deliverables}
             </div>
 
             {/* Mobile Tech */}
-            <div className="md:hidden text-[10px] font-mono text-white/30 tracking-widest uppercase mt-4">
+            <div className="md:hidden text-[10px] font-mono text-white/50 tracking-widest uppercase mt-4">
               {service.tech}
             </div>
           </div>
@@ -234,7 +234,7 @@ export default function ServicesShowcase() {
             <a href="#contact" className="inline-block px-10 py-4 bg-accent text-black font-sans font-medium tracking-widest text-sm uppercase hover:bg-white transition-all duration-300 transform hover:-translate-y-1">
               Start a Project →
             </a>
-            <p className="font-sans text-white/30 text-xs mt-4">UPI · Bank Transfer · International Wire · Crypto accepted</p>
+            <p className="font-sans text-white/50 text-xs mt-4">UPI · Bank Transfer · International Wire · Crypto accepted</p>
           </div>
         </div>
       </div>

@@ -27,7 +27,7 @@ export default function Footer() {
         </div>
 
         {/* Center: Copyright */}
-        <div className="font-sans text-xs tracking-widest text-white/40 uppercase order-3 md:order-2">
+        <div className="font-sans text-xs tracking-widest text-white/60 uppercase order-3 md:order-2">
           &copy; {currentYear} Devil Labs. All Rights Reserved.
         </div>
 

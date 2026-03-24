@@ -110,6 +110,7 @@ export default function ContactSection() {
               <select 
                 name="industry"
                 required
+                aria-label="Select your industry"
                 defaultValue=""
                 className="w-full bg-black/40 border border-white/10 px-4 py-3 text-white font-sans font-light focus:outline-none focus:border-[#CFB53B]/50 transition-colors appearance-none cursor-pointer"
                 style={{ backgroundImage: 'linear-gradient(45deg, transparent 50%, #CFB53B 50%), linear-gradient(135deg, #CFB53B 50%, transparent 50%)', backgroundPosition: 'calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px)', backgroundSize: '5px 5px, 5px 5px', backgroundRepeat: 'no-repeat' }}
