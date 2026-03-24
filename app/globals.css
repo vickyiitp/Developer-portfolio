@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #0A0A0A;
+  --color-foreground: #ffffff;
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Playfair Display", serif;
+  --color-accent: #CFB53B; /* Satin Gold */
+}
+
+:root {
+  --background: #0A0A0A;
+  --foreground: #ffffff;
+  --accent: #CFB53B;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  position: relative;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-shadow: 0 4px 12px rgba(207, 181, 59, 0.05);
+}
+
+/* ═══════════════════════════════════════
+   CREATIVE AMBIENT BACKGROUND
+   ═══════════════════════════════════════ */
+
+/* Gradient Orb 1 - Top Left Gold */
+body::before {
+  content: "";
+  position: fixed;
+  top: -200px;
+  left: -200px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(207,181,59,0.07) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+  animation: orbit1 20s ease-in-out infinite;
+}
+
+/* Gradient Orb 2 - Bottom Right */
+body::after {
+  content: "";
+  position: fixed;
+  bottom: -300px;
+  right: -200px;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(207,181,59,0.05) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+  animation: orbit2 25s ease-in-out infinite;
+}
+
+@keyframes orbit1 {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(100px, 80px); }
+  66% { transform: translate(-50px, 120px); }
+}
+
+@keyframes orbit2 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-120px, -80px); }
+}
+
+/* ═══════════════════════════════════════
+   HERO 3D PERSPECTIVE GRID
+   Creates a Spline/Framer-style floor grid
+   ═══════════════════════════════════════ */
+
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-grid::before {
+  content: "";
+  position: absolute;
+  bottom: -40%;
+  left: -20%;
+  width: 140%;
+  height: 100%;
+  background-image:
+    linear-gradient(rgba(207,181,59,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(207,181,59,0.06) 1px, transparent 1px);
+  background-size: 60px 60px;
+  transform: perspective(600px) rotateX(65deg);
+  transform-origin: center bottom;
+  mask-image: linear-gradient(to top, rgba(0,0,0,0.4), transparent 70%);
+  -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0.4), transparent 70%);
+  animation: gridPulse 8s ease-in-out infinite;
+}
+
+@keyframes gridPulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* ═══════════════════════════════════════
+   ANIMATED SCANNING LINE
+   A horizontal line that sweeps down the hero
+   ═══════════════════════════════════════ */
+
+.scan-line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(207,181,59,0.3), transparent);
+  pointer-events: none;
+  z-index: 2;
+  animation: scanDown 6s linear infinite;
+}
+
+@keyframes scanDown {
+  0% { top: 0; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+/* ═══════════════════════════════════════
+   ANIMATED CORNER BRACKETS
+   Decorative [ ] corners that animate on scroll
+   ═══════════════════════════════════════ */
+
+.corner-brackets {
+  position: relative;
+}
+
+.corner-brackets::before,
+.corner-brackets::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-color: rgba(207,181,59,0.2);
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+
+.corner-brackets::before {
+  top: -4px;
+  left: -4px;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.corner-brackets::after {
+  bottom: -4px;
+  right: -4px;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+}
+
+.corner-brackets:hover::before,
+.corner-brackets:hover::after {
+  width: 40px;
+  height: 40px;
+  border-color: rgba(207,181,59,0.5);
+}
+
+/* ═══════════════════════════════════════
+   GLOWING SECTION DIVIDERS
+   ═══════════════════════════════════════ */
+
+.glow-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg, 
+    transparent, 
+    rgba(207,181,59,0.05) 20%, 
+    rgba(207,181,59,0.3) 50%, 
+    rgba(207,181,59,0.05) 80%, 
+    transparent
+  );
+  position: relative;
+}
+
+.glow-divider::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  right: 0;
+  height: 9px;
+  background: linear-gradient(
+    90deg, 
+    transparent, 
+    rgba(207,181,59,0) 20%, 
+    rgba(207,181,59,0.08) 50%, 
+    rgba(207,181,59,0) 80%, 
+    transparent
+  );
+  filter: blur(4px);
+}
+
+/* ═══════════════════════════════════════
+   ANIMATED GRADIENT BORDER
+   Creates a "living" border effect
+   ═══════════════════════════════════════ */
+
+.gradient-border {
+  position: relative;
+  background: var(--background);
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg,
+    rgba(207,181,59,0.3),
+    transparent 40%,
+    transparent 60%,
+    rgba(207,181,59,0.15)
+  );
+  background-size: 300% 300%;
+  animation: borderGlow 6s ease infinite;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  pointer-events: none;
+}
+
+@keyframes borderGlow {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+/* ═══════════════════════════════════════
+   TEXT GLOW EFFECT
+   For hero headings
+   ═══════════════════════════════════════ */
+
+.text-glow {
+  text-shadow:
+    0 0 20px rgba(207,181,59,0.12),
+    0 0 60px rgba(207,181,59,0.05),
+    0 4px 12px rgba(0,0,0,0.5);
+}
+
+/* ═══════════════════════════════════════
+   UTILITY ANIMATIONS
+   ═══════════════════════════════════════ */
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-subtle-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+/* Slow spin for decorative elements */
+@keyframes slowSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-slow-spin {
+  animation: slowSpin 30s linear infinite;
+}
+
+/* ═══════════════════════════════════════
+   EDITORIAL TYPOGRAPHY
+   ═══════════════════════════════════════ */
+
+.drop-cap::first-letter {
+  font-family: var(--font-heading);
+  color: var(--color-accent);
+  float: left;
+  font-size: 5rem;
+  line-height: 0.8;
+  padding-right: 0.5rem;
+  padding-top: 0.1rem;
+}
+
+.gold-underline {
+  background-image: linear-gradient(transparent calc(100% - 2px), var(--color-accent) 2px);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s ease;
+}
+.gold-underline:hover {
+  background-size: 100% 100%;
+}
+
+/* ═══════════════════════════════════════
+   PERFORMANCE
+   ═══════════════════════════════════════ */
+
+img, video {
+  content-visibility: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgba(207, 181, 59, 0.3);
+  color: white;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
