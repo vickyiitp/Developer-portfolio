@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import ChatBot from "@/components/ChatBot";
 import CustomCursor from "@/components/CustomCursor";
 import OfflinePopup from "@/components/OfflinePopup";
+import BackToTop from "@/components/BackToTop";
 import "./globals.css";
 
 export const metadata = {
@@ -47,13 +48,13 @@ export const metadata = {
     apple: "/profile.jpg",
   },
   verification: {
-    google: "PASTE_YOUR_GOOGLE_SEARCH_CONSOLE_CODE_HERE",
+    google: "",
   },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <head>
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
@@ -67,16 +68,17 @@ export default function RootLayout({ children }) {
           `}
         </Script>
       </head>
-      <body className="antialiased font-sans text-white selection:bg-accent/30 selection:text-white">
+      <body className="antialiased font-sans text-white selection:bg-accent/30 selection:text-white bg-[#050505]">
         <CustomCursor />
         <OfflinePopup />
-        <div className="relative z-10 mx-auto max-w-[1440px] w-full min-h-screen flex flex-col overflow-x-hidden">
+        <div className="relative z-10 mx-auto w-full min-h-screen flex flex-col">
           <Navbar />
           <main className="flex-1 w-full relative overflow-x-hidden">
             {children}
           </main>
         </div>
         <ChatBot />
+        <BackToTop />
       </body>
     </html>
   );

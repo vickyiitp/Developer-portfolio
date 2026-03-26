@@ -99,10 +99,9 @@ export default function EfficiencyEngine() {
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
         
-        {/* Section Header */}
-        <div className="mb-16 md:mb-24 text-center md:text-left">
+        <div className="mb-16 md:mb-24 text-center md:text-left relative z-10">
           <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight">
-            How We Engineer Profit.
+            How We <span className="text-accent italic">Engineer</span> Profit.
           </h2>
         </div>
 

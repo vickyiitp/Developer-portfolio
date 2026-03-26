@@ -29,9 +29,6 @@ export default function OfflinePopup() {
     };
   }, []);
 
-  const manualReload = () => {
-    window.location.reload();
-  };
 
   return (
     <AnimatePresence>
@@ -50,7 +47,7 @@ export default function OfflinePopup() {
           >
             {/* Background Texture */}
             <div className="absolute inset-0 opacity-20 pointer-events-none" 
-                 style={{ backgroundImage: 'radial-gradient(circle at 50% 0%, rgba(2ef,68,68,0.4) 0%, transparent 60%)' }} />
+                 style={{ backgroundImage: 'radial-gradient(circle at 50% 0%, rgba(239,68,68,0.4) 0%, transparent 60%)' }} />
 
             <div className="relative z-10 flex flex-col items-center text-center">
               <div className="w-16 h-16 rounded-full bg-red-500/10 flex items-center justify-center mb-6">
@@ -104,7 +101,7 @@ export default function OfflinePopup() {
 
               {/* Reload Button */}
               <button
-                onClick={manualReload}
+                onClick={() => window.location.reload()}
                 className="flex items-center gap-2 font-sans text-xs tracking-widest text-white/40 uppercase hover:text-white transition-colors group"
               >
                 <RefreshCw className="w-3 h-3 group-hover:rotate-180 transition-transform duration-500" />

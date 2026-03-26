@@ -152,10 +152,9 @@ export default function ChatBot() {
     if (isOpen) inputRef.current?.focus();
   }, [isOpen]);
 
-  const send = () => {
-    if (!input.trim()) return;
-    const userMsg = input.trim();
-    setInput("");
+  const processMessage = (text) => {
+    if (!text.trim()) return;
+    const userMsg = text.trim();
     setIsTyping(true);
 
     setMessages(prev => {
@@ -169,6 +168,11 @@ export default function ChatBot() {
       
       return newHistory;
     });
+  };
+
+  const send = () => {
+    processMessage(input);
+    setInput("");
   };
 
   const quickActions = ["Services", "Pricing", "Contact", "Joke"];
@@ -261,19 +265,7 @@ export default function ChatBot() {
               {quickActions.map(action => (
                 <button
                   key={action}
-                  onClick={() => {
-                    const userMsg = action;
-                    setIsTyping(true);
-                    setMessages(prev => {
-                      const newHistory = [...prev, { role: "user", text: userMsg, ts: Date.now() }];
-                      setTimeout(() => {
-                        const reply = getResponse(userMsg, newHistory);
-                        setMessages(current => [...current, { role: "bot", text: reply, ts: Date.now() }]);
-                        setIsTyping(false);
-                      }, 600 + Math.random() * 800);
-                      return newHistory;
-                    });
-                  }}
+                  onClick={() => processMessage(action)}
                   className="text-[10px] font-mono px-2.5 py-1 border border-white/10 text-white/40 rounded-full hover:border-accent/30 hover:text-accent/70 transition-colors"
                 >
                   {action}
