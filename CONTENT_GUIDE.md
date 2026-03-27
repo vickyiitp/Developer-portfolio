@@ -42,9 +42,10 @@ dev/
 **File:** `components/ServicesShowcase.jsx` — **Lines 87-91**
 ```js
 const pricing = [
-  { tier: "Starter", price: "₹5,000", ... },
-  { tier: "Growth", price: "₹15,000", ... },
-  { tier: "Enterprise", price: "₹50,000+", ... },
+  { tier: "Utility", price: "₹8,000", ... },
+  { tier: "Growth", price: "₹10,000", ... },
+  { tier: "Business", price: "₹35,000", ... },
+  { tier: "Enterprise", price: "₹75,000+", ... },
 ];
 ```
 

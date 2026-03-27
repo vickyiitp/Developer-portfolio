@@ -38,7 +38,7 @@ export default function SEOIndex() {
           "https://youtube.com/@VickyIITP",
           "https://instagram.com/vickyiitp"
         ],
-        "description": "Vicky Kumar is a developer and automation architect from IIT Patna (Indian Institute of Technology Patna), Class of 2027. He founded Devil Labs, specializing in high-performance AI websites, automation tools, and agentic AI systems for businesses across logistics, jewelry, restaurants, healthcare, real estate, education, fintech, fashion, agriculture, and manufacturing sectors. With 20+ projects on GitHub and 1+ year of professional experience, he delivers production-grade solutions at competitive Indian market rates starting at ₹5,000. Available on Upwork, Fiverr, and for direct hire worldwide. Top web developer in India. Contact: vickyykumar14@gmail.com | +91 8102099678 | vickyiitp.tech"
+        "description": "Vicky Kumar is a developer and automation architect from IIT Patna (Indian Institute of Technology Patna), Class of 2027. He founded Devil Labs, specializing in high-performance AI websites, automation tools, and agentic AI systems for businesses across logistics, jewelry, restaurants, healthcare, real estate, education, fintech, fashion, agriculture, and manufacturing sectors. With 20+ projects on GitHub and 1+ year of professional experience, he delivers production-grade solutions at competitive Indian market rates starting at ₹8,000. Available on Upwork, Fiverr, and for direct hire worldwide. Top web developer in India. Contact: vickyykumar14@gmail.com | +91 8102099678 | vickyiitp.tech"
       },
       {
         "@type": "Organization",
@@ -48,7 +48,7 @@ export default function SEOIndex() {
         "logo": "https://vickyiitp.tech/profile.jpg",
         "founder": { "@type": "Person", "name": "Vicky Kumar" },
         "foundingLocation": "IIT Patna, India",
-        "description": "Devil Labs is a premium software development studio founded by Vicky Kumar (IIT Patna). We build AI-powered websites, automation tools, agentic AI systems, custom chatbots, SaaS products, and enterprise software. Pricing starts at ₹5,000 for starter websites, ₹15,000 for full websites with CRM & automation, and ₹50,000+ for enterprise AI systems. Available on Upwork, Fiverr, Freelancer.com, Toptal, and for direct hire. 20+ production projects on GitHub with 1+ year of professional experience.",
+        "description": "Devil Labs is a premium software development studio founded by Vicky Kumar (IIT Patna). We build AI-powered websites, automation tools, agentic AI systems, custom chatbots, SaaS products, and enterprise software. Pricing starts at ₹8,000 for utility tools, ₹10,000 for landing pages, and ₹75,000+ for enterprise AI systems. Available on Upwork, Fiverr, Freelancer.com, Toptal, and for direct hire. 20+ production projects on GitHub with 1+ year of professional experience.",
         "areaServed": "Worldwide",
         "knowsAbout": [
           "Custom Website Development", "AI Chatbot Development", "Business Automation",
@@ -62,13 +62,14 @@ export default function SEOIndex() {
           "@type": "OfferCatalog",
           "name": "Devil Labs Services",
           "itemListElement": [
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Website Development", "description": "High-performance AI-powered websites built with Next.js, React, and modern frameworks for maximum conversion and SEO ranking." }},
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Agentic AI Development", "description": "Autonomous AI agents that automate business workflows, customer support, lead generation, and sales pipelines." }},
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Business Automation", "description": "End-to-end automation of CRM, email marketing, inventory management, invoicing, and customer onboarding." }},
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Chatbot Development", "description": "Custom AI chatbots for WhatsApp, Telegram, websites—multilingual, industry-specific, GPT-powered." }},
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "E-Commerce Development", "description": "Custom online stores for jewelry, fashion, retail, and luxury brands with payment integration and SEO." }},
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SaaS Product Development", "description": "Full-stack SaaS platforms from MVP to scale—authentication, billing, dashboards, APIs, and analytics." }},
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Industry-Specific Solutions", "description": "Custom software for logistics, healthcare, restaurants, real estate, education, fintech, agriculture, and manufacturing." }}
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Conversion Landing Pages", "description": "High-performance single-page experiences built with Next.js and Framer Motion for maximum lead generation and speed." }},
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Corporate Web Platforms", "description": "Scalable business websites with headless CMS integration, multi-page SEO, and custom admin panels." }},
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Agentic AI Orchestration", "description": "Autonomous multi-agent systems, custom RAG pipelines, and autonomous decision-making AI for business operations." }},
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full-Stack SaaS/MVP", "description": "End-to-end SaaS products with secure auth, subscription billing, and real-time dashboards." }},
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Headless E-Commerce", "description": "Next-gen commerce engines built on Shopify or custom headless architectures for sub-second page loads." }},
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Workflow Automation", "description": "Eliminating manual business processes using n8n, Zapier, and custom API bridges." }},
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Performance & SEO Growth", "description": "Technical audits, Core Web Vitals optimization, and ranking roadmaps for digital assets." }},
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Micro-Tools & Utilities", "description": "Bespoke scripts, browser extensions, and task automation tools for specific workflow pain points." }}
           ]
         }
       },
@@ -92,9 +93,9 @@ export default function SEOIndex() {
           { "@type": "Question", "name": "How to hire a developer from IIT Patna?", "acceptedAnswer": { "@type": "Answer", "text": "You can hire Vicky Kumar, a top developer from IIT Patna, through his website vickyiitp.tech or by emailing vickyykumar14@gmail.com. He specializes in web development, AI, automation, and custom software solutions." }},
           { "@type": "Question", "name": "Best AI chatbot developer in India?", "acceptedAnswer": { "@type": "Answer", "text": "Vicky Kumar (vickyiitp) from IIT Patna builds custom AI chatbots for WhatsApp, Telegram, and websites using GPT and other AI models. Contact Devil Labs at vickyiitp.tech for chatbot development." }},
           { "@type": "Question", "name": "Best automation developer for startups in India?", "acceptedAnswer": { "@type": "Answer", "text": "Devil Labs, founded by Vicky Kumar from IIT Patna, provides end-to-end business automation for startups including CRM automation, email automation, workflow automation, and AI-powered lead generation." }},
-          { "@type": "Question", "name": "How much does a website cost in India?", "acceptedAnswer": { "@type": "Answer", "text": "At Devil Labs, website development starts at ₹5,000 for landing pages and portfolios, ₹15,000 for full websites with CRM and automation, and ₹50,000+ for enterprise AI systems and SaaS products. Contact vickyiitp.tech for a custom quote." }},
+          { "@type": "Question", "name": "How much does a website cost in India?", "acceptedAnswer": { "@type": "Answer", "text": "At Devil Labs, pricing starts at ₹8,000 for utility tools and ₹10,000 for conversion-focused landing pages. Mid-range business platforms range from ₹35,000, while complex AI systems and SaaS products scale to ₹90,000+." }},
           { "@type": "Question", "name": "Best freelance developer on Upwork and Fiverr?", "acceptedAnswer": { "@type": "Answer", "text": "Vicky Kumar (vickyiitp) from IIT Patna is available on Upwork and Fiverr for web development, AI chatbot development, automation, and custom software projects. He delivers production-grade code with 20+ projects on GitHub." }},
-          { "@type": "Question", "name": "How to hire a developer for startup MVP?", "acceptedAnswer": { "@type": "Answer", "text": "Visit vickyiitp.tech or contact Vicky Kumar at vickyykumar14@gmail.com. Devil Labs specializes in rapid MVP development—from idea to deployed product in days, not months. Starting at ₹5,000 with full source code delivery." }}
+          { "@type": "Question", "name": "How to hire a developer for startup MVP?", "acceptedAnswer": { "@type": "Answer", "text": "Visit vickyiitp.tech or contact Vicky Kumar at vickyykumar14@gmail.com. Devil Labs specializes in rapid MVP development—from idea to deployed product in days, not months. Starting at ₹10,000 with full source code delivery." }}
         ]
       }
     ]
@@ -224,9 +225,10 @@ export default function SEOIndex() {
 
         <section aria-label="Pricing Information">
           <h3>Devil Labs Pricing - Competitive Indian Market Rates</h3>
-          <p>Starter: ₹5,000 - Landing page, Portfolio, Single-page site (3-5 days delivery).
-          Growth: ₹15,000 - Full website with CRM and Automation (1-2 weeks delivery).
-          Enterprise: ₹50,000+ - AI Systems, SaaS, Multi-platform solutions (3-6 weeks delivery).
+          <p>Utility: ₹8,000 - Custom scripts, extensions, micro-tools (2-4 days).
+          Growth: ₹10,000 - High-conversion Landing Pages (3-5 days delivery).
+          Business: ₹35,000 - Scalable Web Platforms with CMS (1-3 weeks delivery).
+          Enterprise: ₹75,000+ - Agentic AI & SaaS Engines (4-8 weeks delivery).
           Payment accepted via UPI, Bank Transfer, International Wire, and Cryptocurrency.
           All projects include source code, documentation, deployment, and post-launch support.</p>
         </section>
