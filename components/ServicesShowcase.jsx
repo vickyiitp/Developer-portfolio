@@ -160,10 +160,10 @@ export default function ServicesShowcase() {
                   {service.tech}
                 </span>
                 <a 
-                  href="/contact" 
+                  href={`/contact?service=${encodeURIComponent(service.title)}`} 
                   className="text-[10px] font-sans font-bold text-accent hover:text-white transition-colors flex items-center gap-1 group/btn"
                 >
-                  HIRE <span className="group-hover/btn:translate-x-1 transition-transform">→</span>
+                  DEPLOY <span className="group-hover/btn:translate-x-1 transition-transform">→</span>
                 </a>
               </div>
             </motion.div>

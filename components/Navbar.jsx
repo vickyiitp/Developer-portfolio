@@ -31,6 +31,7 @@ export default function Navbar() {
           <Link
             key={link.name}
             href={link.href}
+            prefetch={true}
             className="text-sm font-sans font-light text-white/70 hover:text-accent transition-colors duration-300"
           >
             {link.name}
@@ -42,6 +43,7 @@ export default function Navbar() {
       <div className="hidden md:block">
         <Link 
           href="/contact"
+          prefetch={true}
           className="px-6 py-2.5 text-sm font-sans font-light border border-accent/50 text-accent hover:bg-accent/10 transition-all duration-300 rounded-sm"
         >
           Request Consultation

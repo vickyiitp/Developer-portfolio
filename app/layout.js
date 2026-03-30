@@ -4,20 +4,21 @@ import ChatBot from "@/components/ChatBot";
 import CustomCursor from "@/components/CustomCursor";
 import OfflinePopup from "@/components/OfflinePopup";
 import BackToTop from "@/components/BackToTop";
+import ProcessPopup from "@/components/ProcessPopup";
 import "./globals.css";
 
 export const metadata = {
   title: "Vicky Kumar | IIT Patna Developer | Devil Labs - AI Websites, Automation & Agentic AI",
-  description: "Vicky Kumar, IIT Patna developer & founder of Devil Labs. Top web developer in India specializing in AI-powered websites, business automation, agentic AI, chatbots, e-commerce, and SaaS development. Hire the best developer from IIT Patna. Starting at ₹5,000. Contact: vickyykumar14@gmail.com | +91 8102099678",
-  keywords: "vickyiitp, vicky kumar, iit patna developer, devil labs, best web developer india, ai developer india, automation developer, agentic ai developer, chatbot developer india, ecommerce developer, next.js developer, react developer, full stack developer india, hire iitian developer, saas developer, hire freelance developer upwork, fiverr web developer, top developer india 2026",
+  description: "Vicky Kumar, IIT Patna developer & founder of Devil Labs. Top AI architect in India specializing in AI-powered infrastructure, enterprise B2B pipelines, agentic AI, NLP chatbots, and scalable SaaS deployments. Partner with the top tech talent from IIT Patna. Architecting systems starting at ₹5,000. Contact: vickyykumar14@gmail.com | +91 8102099678",
+  keywords: "vickyiitp, vicky kumar, iit patna developer, devil labs, best web architect india, ai automation engineer india, workflow architecture, agentic ai systems, chatbot integrations india, ecommerce engine deployment, next.js developer, enterprise react, full stack systems india, deploy iitian architect, b2b saas engineer, direct b2b digital consulting, elite web architect, enterprise tech consultant 2026",
   authors: [{ name: "Vicky Kumar", url: "https://vickyiitp.tech" }],
   creator: "Vicky Kumar - Devil Labs",
   publisher: "Devil Labs",
   metadataBase: new URL("https://vickyiitp.tech"),
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Vicky Kumar | Devil Labs - Best AI Developer & Automation Architect, IIT Patna",
-    description: "Hire the top web developer from IIT Patna. AI websites, business automation, agentic AI, chatbots, e-commerce, and SaaS development. Starting at ₹5,000. Founded by Vicky Kumar, IIT Patna CSE.",
+    title: "Vicky Kumar | Devil Labs - Enterprise B2B Systems & Automation Architect, IIT Patna",
+    description: "Deploy scalable tech with an elite architect from IIT Patna. AI infrastructures, predictive endpoints, agentic NLP, custom digital operations, and SaaS product engineering. Starting at ₹5,000. Founded by Vicky Kumar, IIT Patna CSE.",
     url: "https://vickyiitp.tech",
     siteName: "Devil Labs | Vicky Kumar",
     images: [
@@ -54,7 +55,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-scroll-behavior="smooth">
+    <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
@@ -68,7 +69,7 @@ export default function RootLayout({ children }) {
           `}
         </Script>
       </head>
-      <body className="antialiased font-sans text-white selection:bg-accent/30 selection:text-white bg-[#050505]">
+      <body className="antialiased font-sans text-white selection:bg-accent/30 selection:text-white bg-[#050505]" suppressHydrationWarning>
         <CustomCursor />
         <OfflinePopup />
         <div className="relative z-10 mx-auto w-full min-h-screen flex flex-col">
@@ -78,6 +79,7 @@ export default function RootLayout({ children }) {
           </main>
         </div>
         <ChatBot />
+        <ProcessPopup />
         <BackToTop />
       </body>
     </html>

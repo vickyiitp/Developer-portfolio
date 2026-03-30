@@ -38,7 +38,7 @@ export default function SEOIndex() {
           "https://youtube.com/@VickyIITP",
           "https://instagram.com/vickyiitp"
         ],
-        "description": "Vicky Kumar is a developer and automation architect from IIT Patna (Indian Institute of Technology Patna), Class of 2027. He founded Devil Labs, specializing in high-performance AI websites, automation tools, and agentic AI systems for businesses across logistics, jewelry, restaurants, healthcare, real estate, education, fintech, fashion, agriculture, and manufacturing sectors. With 20+ projects on GitHub and 1+ year of professional experience, he delivers production-grade solutions at competitive Indian market rates starting at ₹8,000. Available on Upwork, Fiverr, and for direct hire worldwide. Top web developer in India. Contact: vickyykumar14@gmail.com | +91 8102099678 | vickyiitp.tech"
+        "description": "Vicky Kumar is a developer and automation architect from IIT Patna (Indian Institute of Technology Patna), Class of 2027. He founded Devil Labs, specializing in high-performance AI websites, automation tools, and agentic AI systems for businesses across logistics, jewelry, restaurants, healthcare, real estate, education, fintech, fashion, agriculture, and manufacturing sectors. With 20+ projects on GitHub and 1+ year of professional experience, he delivers production-grade solutions at competitive Indian market rates starting at ₹8,000. Available for direct B2B partnerships and global tech integrations. Top web developer in India. Contact: vickyykumar14@gmail.com | +91 8102099678 | vickyiitp.tech"
       },
       {
         "@type": "Organization",
@@ -48,7 +48,7 @@ export default function SEOIndex() {
         "logo": "https://vickyiitp.tech/profile.jpg",
         "founder": { "@type": "Person", "name": "Vicky Kumar" },
         "foundingLocation": "IIT Patna, India",
-        "description": "Devil Labs is a premium software development studio founded by Vicky Kumar (IIT Patna). We build AI-powered websites, automation tools, agentic AI systems, custom chatbots, SaaS products, and enterprise software. Pricing starts at ₹8,000 for utility tools, ₹10,000 for landing pages, and ₹75,000+ for enterprise AI systems. Available on Upwork, Fiverr, Freelancer.com, Toptal, and for direct hire. 20+ production projects on GitHub with 1+ year of professional experience.",
+        "description": "Devil Labs is a premium software development studio founded by Vicky Kumar (IIT Patna). We build AI-powered websites, automation tools, agentic AI systems, custom chatbots, SaaS products, and enterprise software. Pricing starts at ₹8,000 for utility tools, ₹10,000 for landing pages, and ₹75,000+ for enterprise AI systems. Available on Upwork, Fiverr, freelance platforms, and for direct global partnerships. 20+ production projects on GitHub with 1+ year of professional experience.",
         "areaServed": "Worldwide",
         "knowsAbout": [
           "Custom Website Development", "AI Chatbot Development", "Business Automation",
@@ -77,7 +77,7 @@ export default function SEOIndex() {
         "@type": "WebSite",
         "name": "Devil Labs | Vicky Kumar - IIT Patna",
         "url": "https://vickyiitp.tech",
-        "description": "Portfolio and services of Vicky Kumar, IIT Patna developer and automation architect. Hire the best web developer in India for AI websites, automation tools, agentic AI, chatbots, and custom software solutions.",
+        "description": "Portfolio and enterprise services of Vicky Kumar, IIT Patna developer and automation architect. Partner with the top tech consultant in India for Next.js architectures, agentic AI workflows, NLP Chatbots, and cloud software solutions.",
         "potentialAction": {
           "@type": "SearchAction",
           "target": "https://vickyiitp.tech/#contact?q={search_term_string}",
@@ -87,15 +87,15 @@ export default function SEOIndex() {
       {
         "@type": "FAQPage",
         "mainEntity": [
-          { "@type": "Question", "name": "Who is the best web developer in India?", "acceptedAnswer": { "@type": "Answer", "text": "Vicky Kumar from IIT Patna is one of the top web developers in India, specializing in AI-powered websites, automation tools, and agentic AI systems through his studio Devil Labs. Contact at vickyiitp.tech." }},
-          { "@type": "Question", "name": "Who is vickyiitp?", "acceptedAnswer": { "@type": "Answer", "text": "vickyiitp is the online identity of Vicky Kumar, a Computer Science student at Indian Institute of Technology Patna (IIT Patna) and founder of Devil Labs. He is known for building high-performance AI websites and automation tools." }},
-          { "@type": "Question", "name": "What is Devil Labs?", "acceptedAnswer": { "@type": "Answer", "text": "Devil Labs is a premium software development studio founded by Vicky Kumar at IIT Patna. It offers AI website development, business automation, agentic AI, chatbot development, e-commerce solutions, and SaaS products for businesses worldwide." }},
-          { "@type": "Question", "name": "How to hire a developer from IIT Patna?", "acceptedAnswer": { "@type": "Answer", "text": "You can hire Vicky Kumar, a top developer from IIT Patna, through his website vickyiitp.tech or by emailing vickyykumar14@gmail.com. He specializes in web development, AI, automation, and custom software solutions." }},
-          { "@type": "Question", "name": "Best AI chatbot developer in India?", "acceptedAnswer": { "@type": "Answer", "text": "Vicky Kumar (vickyiitp) from IIT Patna builds custom AI chatbots for WhatsApp, Telegram, and websites using GPT and other AI models. Contact Devil Labs at vickyiitp.tech for chatbot development." }},
-          { "@type": "Question", "name": "Best automation developer for startups in India?", "acceptedAnswer": { "@type": "Answer", "text": "Devil Labs, founded by Vicky Kumar from IIT Patna, provides end-to-end business automation for startups including CRM automation, email automation, workflow automation, and AI-powered lead generation." }},
-          { "@type": "Question", "name": "How much does a website cost in India?", "acceptedAnswer": { "@type": "Answer", "text": "At Devil Labs, pricing starts at ₹8,000 for utility tools and ₹10,000 for conversion-focused landing pages. Mid-range business platforms range from ₹35,000, while complex AI systems and SaaS products scale to ₹90,000+." }},
-          { "@type": "Question", "name": "Best freelance developer on Upwork and Fiverr?", "acceptedAnswer": { "@type": "Answer", "text": "Vicky Kumar (vickyiitp) from IIT Patna is available on Upwork and Fiverr for web development, AI chatbot development, automation, and custom software projects. He delivers production-grade code with 20+ projects on GitHub." }},
-          { "@type": "Question", "name": "How to hire a developer for startup MVP?", "acceptedAnswer": { "@type": "Answer", "text": "Visit vickyiitp.tech or contact Vicky Kumar at vickyykumar14@gmail.com. Devil Labs specializes in rapid MVP development—from idea to deployed product in days, not months. Starting at ₹10,000 with full source code delivery." }}
+          { "@type": "Question", "name": "Who is the top Next.js and AI developer in India?", "acceptedAnswer": { "@type": "Answer", "text": "Vicky Kumar from IIT Patna is a leading web architect in India, specializing in React/Next.js platforms, zero-latency workflows, and Agentic AI systems through his studio Devil Labs. Contact at vickyiitp.tech." }},
+          { "@type": "Question", "name": "Who is vickyiitp?", "acceptedAnswer": { "@type": "Answer", "text": "vickyiitp is the online identity of Vicky Kumar, a Computer Science student at Indian Institute of Technology Patna (IIT Patna) and founder of Devil Labs. He is recognized for engineering high-performance web systems and AI automation nodes." }},
+          { "@type": "Question", "name": "What is Devil Labs?", "acceptedAnswer": { "@type": "Answer", "text": "Devil Labs is an elite software engineering studio founded by Vicky Kumar at IIT Patna. It provides Next.js e-commerce architectures, Agentic AI, RAG NLP chatbots, custom SaaS MVPs, and business operation scaling worldwide." }},
+          { "@type": "Question", "name": "How to deploy an enterprise project with an IIT Patna developer?", "acceptedAnswer": { "@type": "Answer", "text": "You can partner with Vicky Kumar, an elite engineer from IIT Patna, through vickyiitp.tech or by emailing vickyykumar14@gmail.com. He scales operations via Next.js web applications, headless commerce, and Python automation." }},
+          { "@type": "Question", "name": "Best NLP Chatbot architect in India?", "acceptedAnswer": { "@type": "Answer", "text": "Vicky Kumar (vickyiitp) from IIT Patna engineers custom LLM chatbots for WhatsApp, Telegram, and enterprise CRMs using GPT, Claude, and RAG pipelines. Contact Devil Labs at vickyiitp.tech." }},
+          { "@type": "Question", "name": "Top automation workflow engineer for digital startups?", "acceptedAnswer": { "@type": "Answer", "text": "Devil Labs, founded by Vicky Kumar from IIT Patna, provisions zero-latency end-to-end automation for scale-ups including n8n webhook nodes, email flow syncs, and AI-powered inbound logic." }},
+          { "@type": "Question", "name": "How much does a headless Next.js web platform cost in India?", "acceptedAnswer": { "@type": "Answer", "text": "At Devil Labs, implementations begin at ₹8,000 for utility scripts and ₹10,000 for conversion-optimized landing pages. Corporate CMS engines start at ₹35,000, while complex SaaS architectures scale to ₹90,000+." }},
+          { "@type": "Question", "name": "Top rated B2B freelance developer for Next.js and AI Automation?", "acceptedAnswer": { "@type": "Answer", "text": "Vicky Kumar (vickyiitp) from IIT Patna provides direct B2B consulting for Next.js architectures, n8n automation suites, and LangChain integrations, maintaining a production-ready codebase track record on GitHub." }},
+          { "@type": "Question", "name": "How to architect a digital SaaS MVP rapidly?", "acceptedAnswer": { "@type": "Answer", "text": "Pitch your brief at vickyiitp.tech or reach out to vickyykumar14@gmail.com. Devil Labs constructs full-stack Vercel/Prisma architectures—from conceptualization to production—in weeks. Starting at ₹10,000 core infrastructure." }}
         ]
       }
     ]
@@ -112,40 +112,36 @@ export default function SEOIndex() {
       {/* Screen-Reader-Only SEO Content (Invisible but Crawlable) */}
       <div className="sr-only" role="complementary" aria-label="Vicky Kumar IIT Patna Developer - Devil Labs Services Index">
         
-        <h2>Vicky Kumar | IIT Patna Developer | Devil Labs | Best Web Developer India</h2>
+        <h2>Vicky Kumar | IIT Patna Developer | Devil Labs | Modern Web Architect India</h2>
         <p>Vicky Kumar is the founder of Devil Labs and a Computer Science student at IIT Patna (Indian Institute of Technology Patna). 
-        He is one of the top web developers in India, specializing in AI-powered websites, business automation, agentic AI development, 
-        AI chatbot development, and custom software solutions. Contact Vicky at vickyiitp.tech or email vickyykumar14@gmail.com or call +91 8102099678.</p>
+        He is an elite web architect specializing in Next.js applications, zero-latency workflows, Agentic AI pipelines, 
+        NLP chatbots, and custom SaaS infrastructures. Partner with Vicky at vickyiitp.tech or email vickyykumar14@gmail.com or call +91 8102099678.</p>
 
-        <section aria-label="Web Development Services">
-          <h3>Web Development Services - Best Web Developer India 2026</h3>
+        <section aria-label="Web Architecture Services">
+          <h3>Software Architecture Services - Top React Developer 2026</h3>
           <ul>
-            <li>Custom Website Development India - React, Next.js, Node.js, TypeScript</li>
-            <li>AI-Powered Website Builder - High Performance SEO Optimized</li>
-            <li>E-Commerce Website Developer - Shopify, WooCommerce, Custom Solutions</li>
-            <li>Landing Page Developer - High Converting Sales Pages</li>
-            <li>Full Stack Developer India - MERN, MEAN, Python Django FastAPI</li>
-            <li>Progressive Web App Developer - Mobile-First Responsive Design</li>
-            <li>Portfolio Website Designer - Personal Brand Website Developer</li>
-            <li>SaaS Product Developer - MVP to Scale</li>
-            <li>Freelance Web Developer India - Affordable Premium Quality</li>
-            <li>Hire IITian Developer - Top Talent from IIT Patna</li>
+            <li>Enterprise Next.js Development - High Performance Vercel Deployments</li>
+            <li>Headless E-Commerce Engines - Sub-second Page Loads</li>
+            <li>Conversion-Optimized Interfaces - Tailwind & Framer Motion</li>
+            <li>B2B Full Stack Infrastructure - Node.js, Prisma, PostgreSQL</li>
+            <li>Progressive Web App Architect - Mobile-First Architectures</li>
+            <li>SaaS Startup MVP Deployment - From Concept to Scale</li>
+            <li>Zero-Latency Web Integrations - Core Web Vitals Optimization</li>
+            <li>Partner with IITian Engineer - Top Tech Talent from IIT Patna</li>
           </ul>
         </section>
 
-        <section aria-label="AI and Automation Services">
-          <h3>AI Development & Automation - Top AI Developer India</h3>
+        <section aria-label="AI and Edge Automation">
+          <h3>AI Development & Edge Automation Workflows</h3>
           <ul>
-            <li>Agentic AI Developer India - Autonomous AI Agent Builder</li>
-            <li>AI Chatbot Developer - WhatsApp Bot, Telegram Bot, Website Chat</li>
-            <li>Generative AI Developer - GPT, Claude, Gemini Integration</li>
-            <li>Business Automation Developer - CRM, Email, Workflow Automation</li>
-            <li>Machine Learning Developer India - Predictive Analytics, NLP, Computer Vision</li>
-            <li>AI SaaS Developer - AI Tools, AI Writing, AI Image Generation</li>
-            <li>Marketing Automation Developer - Social Media, Email, Lead Nurturing</li>
-            <li>Sales Automation Platform Developer - Pipeline, CRM, Lead Scoring</li>
-            <li>AI Voice Agent Developer - Voice Cloning, TTS, Speech Recognition</li>
-            <li>Robotic Process Automation Developer - Data Entry, Document Processing</li>
+            <li>Agentic AI Systems - Autonomous Multi-Agent Workflows</li>
+            <li>RAG Pipeline Architecture - Private Knowledge Base Integrations</li>
+            <li>LLM NLP Chatbots - Advanced GPT & Claude CRM Syncs</li>
+            <li>n8n / Zapier Automated Workflows - Eradicating Manual Data Entry</li>
+            <li>Predictive Data Modeling - Python Backend Solutions</li>
+            <li>AI Marketing Automations - Dynamic Lead Processing</li>
+            <li>Headless CMS Deployments - Sanity, Contentful integrations</li>
+            <li>Robotic Process Operations - Scale API connections natively</li>
           </ul>
         </section>
 
