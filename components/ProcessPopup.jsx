@@ -60,25 +60,6 @@ export default function ProcessPopup() {
 
   return (
     <>
-      {/* Mobile Floating Trigger (Bottom Left Pill) */}
-      <button
-        onClick={() => setIsOpen(true)}
-        className="md:hidden fixed bottom-6 left-5 z-40 bg-[min(100%,_rgba(24,24,27,0.9))] bg-zinc-950/90 backdrop-blur-md border border-zinc-700/50 hover:bg-zinc-800 text-zinc-300 py-2.5 px-4 rounded-full shadow-2xl flex items-center gap-2 transition-transform active:scale-95"
-      >
-        <Activity size={16} className="text-emerald-400" />
-        <span className="text-[10px] font-semibold tracking-widest uppercase">How I Work</span>
-      </button>
-
-      {/* Desktop Floating Trigger (Left Edge Vertical Tab) */}
-      <button
-        onClick={() => setIsOpen(true)}
-        className="hidden md:flex fixed left-0 top-1/2 -translate-y-1/2 z-40 bg-zinc-900 border border-zinc-700/50 hover:bg-zinc-800 text-zinc-300 py-4 px-2 rounded-r-xl shadow-2xl transition-all duration-300 group flex-col items-center gap-2"
-        style={{ writingMode: "vertical-rl", textOrientation: "mixed" }}
-      >
-        <span className="text-sm font-semibold tracking-widest uppercase rotate-180 mb-2">How I Work</span>
-        <Activity size={18} className="text-emerald-400 group-hover:animate-pulse shrink-0" />
-      </button>
-
       {/* Slide-out Panel */}
       <AnimatePresence>
         {isOpen && (
