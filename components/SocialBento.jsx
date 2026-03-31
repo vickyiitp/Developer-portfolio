@@ -28,7 +28,7 @@ export default function SocialBento() {
             <div className="z-10 mt-12">
               <span className="text-[#CFB53B] text-[10px] tracking-widest font-sans uppercase mb-2 block">Latest Insight</span>
               <p className="font-heading text-xl text-white font-medium leading-snug">
-                "Why 90% of agencies fail to scale their fulfillment, and the exact Automation pipeline you need instead."
+                &quot;Why 90% of agencies fail to scale their fulfillment, and the exact Automation pipeline you need instead.&quot;
               </p>
               <div className="mt-6 font-sans text-xs text-white/50 group-hover:text-white transition-colors">Read full post →</div>
             </div>
@@ -76,7 +76,7 @@ export default function SocialBento() {
             <MessageCircle className="w-6 h-6 text-white/50 group-hover:text-white transition-colors" strokeWidth={1.5} />
             <div>
               <p className="font-sans text-sm text-white/80 leading-relaxed">
-                If you're still manually entering lead data into your CRM in 2026, you're losing the war. Automate or evaporate. 
+                If you&apos;re still manually entering lead data into your CRM in 2026, you&apos;re losing the war. Automate or evaporate.
               </p>
               <div className="mt-4 text-[#CFB53B] text-[10px] tracking-widest font-sans uppercase">@vickyiitp</div>
             </div>

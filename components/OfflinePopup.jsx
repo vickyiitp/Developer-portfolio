@@ -58,8 +58,7 @@ export default function OfflinePopup() {
                 Connection Lost.
               </h2>
               <p className="font-sans text-white/50 text-sm mb-8">
-                Your network dropped, but Devil Labs never sleeps. If you're looking to upgrade your business, you can still reach out to us while offline.
-              </p>
+                Your network dropped, but Devil Labs never sleeps. If you&apos;re looking to upgrade your business, you can still reach out to us while offline.  
 
               {/* Mini Services List */}
               <div className="w-full bg-white/[0.03] border border-white/5 rounded-md p-4 mb-6 text-left">

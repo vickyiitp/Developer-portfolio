@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function FounderNarrative() {
   return (
@@ -26,10 +27,12 @@ export default function FounderNarrative() {
             className="flex flex-col gap-8"
           >
             <div className="relative w-full aspect-square max-w-md mx-auto lg:mx-0 rounded-sm overflow-hidden border border-white/10 group">
-              <img 
-                src="/profile.jpg" 
-                alt="Vicky - Founder of Devil Labs" 
-                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out" 
+              <Image
+                src="/profile.jpg"
+                alt="Vicky - Founder of Devil Labs"
+                width={500}
+                height={500}
+                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out"
               />
               <div className="absolute inset-0 bg-linear-to-tr from-[#CFB53B]/20 to-transparent pointer-events-none mix-blend-overlay"></div>
               <div className="absolute bottom-6 left-6 border-l-2 border-[#CFB53B] pl-4">

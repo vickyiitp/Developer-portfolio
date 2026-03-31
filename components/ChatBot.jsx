@@ -253,7 +253,7 @@ function ChatForm({ onSuccess }) {
 
 export default function ChatBot() {
   const [isOpen, setIsOpen] = useState(false);
-  const [messages, setMessages] = useState([
+  const [messages, setMessages] = useState(() => [
     { role: "bot", text: "Hey! 👋 I'm Devil Bot. Ask about services, pricing, or say 'joke' for dev humor!", type: "text", ts: Date.now() }
   ]);
   const [input, setInput] = useState("");
