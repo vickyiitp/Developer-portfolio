@@ -16,7 +16,7 @@ export default function CustomCursor() {
 
   useEffect(() => {
     const isTouchDevice = "ontouchstart" in window || navigator.maxTouchPoints > 0;
-    setIsDesktop(!isTouchDevice);
+    setTimeout(() => setIsDesktop(!isTouchDevice), 0);
 
     if (isTouchDevice) return;
 
