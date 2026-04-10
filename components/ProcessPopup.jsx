@@ -37,8 +37,8 @@ export default function ProcessPopup() {
     },
     {
       icon: <Wallet size={20} />,
-      title: "4. Terms & 50% Advance",
-      desc: "We kick off the project formally with a 50% upfront payment. The remaining is milestone-based.",
+      title: "4. Terms & 30% Advance",
+      desc: "We kick off the project formally with a 30% upfront payment, 30% in mid-milestone, and 40% on final delivery.",
       color: "text-amber-400",
       bg: "bg-amber-400/10",
     },
@@ -153,7 +153,7 @@ export default function ProcessPopup() {
                 <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-5 text-center mt-8">
                   <h4 className="text-white font-semibold mb-2">Freelancer Code of Ethics</h4>
                   <p className="text-xs text-zinc-400 px-2 leading-relaxed">
-                    By strictly adhering to a 50% upfront, milestone-based payment structure, we ensure mutual commitment. Unforeseen delays are communicated proactively, and IP is handed over upon final clearance.
+                    By strictly adhering to a 30% upfront, 30% mid-milestone, and 40% final payment structure, we ensure mutual commitment. Unforeseen delays are communicated proactively, and IP is handed over upon final clearance.
                   </p>
                 </div>
               </div>

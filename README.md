@@ -35,6 +35,6 @@ npm run build
 See [CONTENT_GUIDE.md](./CONTENT_GUIDE.md) for exact file/line references.
 
 ## Contact
-- **Email:** vickyykumar14@gmail.com
+- **Email:** themvaplatform@gmail.com
 - **Phone:** +91 8102099678
 - **GitHub:** [github.com/vickyiitp](https://github.com/vickyiitp)

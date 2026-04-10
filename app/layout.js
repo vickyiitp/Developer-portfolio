@@ -9,7 +9,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "Vicky Kumar | IIT Patna Developer | Devil Labs - AI Websites, Automation & Agentic AI",
-  description: "Vicky Kumar, IIT Patna developer & founder of Devil Labs. Top AI architect in India specializing in AI-powered infrastructure, enterprise B2B pipelines, agentic AI, NLP chatbots, and scalable SaaS deployments. Partner with the top tech talent from IIT Patna. Architecting systems starting at ₹5,000. Contact: vickyykumar14@gmail.com | +91 8102099678",
+  description: "Vicky Kumar, IIT Patna developer & founder of Devil Labs. Top AI architect in India specializing in AI-powered infrastructure, enterprise B2B pipelines, agentic AI, NLP chatbots, and scalable SaaS deployments. Partner with the top tech talent from IIT Patna. Architecting systems starting at ₹5,000. Contact: themvaplatform@gmail.com | +91 8102099678",
   keywords: "vickyiitp, vicky kumar, iit patna developer, devil labs, best web architect india, ai automation engineer india, workflow architecture, agentic ai systems, chatbot integrations india, ecommerce engine deployment, next.js developer, enterprise react, full stack systems india, deploy iitian architect, b2b saas engineer, direct b2b digital consulting, elite web architect, enterprise tech consultant 2026",
   authors: [{ name: "Vicky Kumar", url: "https://vickyiitp.tech" }],
   creator: "Vicky Kumar - Devil Labs",
@@ -45,12 +45,19 @@ export const metadata = {
     googleBot: { index: true, follow: true, "max-video-preview": -1, "max-image-preview": "large", "max-snippet": -1 },
   },
   icons: {
-    icon: "/profile.jpg",
-    apple: "/profile.jpg",
+    icon: "/tsb.svg",
+    apple: "/tsb.svg",
   },
   verification: {
     google: "",
   },
+};
+
+export const viewport = {
+  themeColor: "#050505",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
 };
 
 export default function RootLayout({ children }) {
@@ -59,6 +66,10 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        {/* Preconnect to crucial domains for instant performance */}
+        <link rel="preconnect" href="https://vickyiitp.tech" crossOrigin="anonymous" />
+        <link rel="preload" href="/profile.jpg" as="image" fetchPriority="high" />
+
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-7BHY0YHBQ8" strategy="afterInteractive" />
         <Script id="gtag-init" strategy="afterInteractive">
           {`

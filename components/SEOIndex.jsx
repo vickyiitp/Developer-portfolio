@@ -8,7 +8,7 @@ export default function SEOIndex() {
         "alternateName": ["vickyiitp", "Vicky IIT Patna", "Devil Labs Founder"],
         "url": "https://vickyiitp.tech",
         "image": "https://vickyiitp.tech/profile.jpg",
-        "email": "vickyykumar14@gmail.com",
+        "email": "themvaplatform@gmail.com",
         "telephone": "+918102099678",
         "jobTitle": "Developer & Automation Architect",
         "worksFor": { "@type": "Organization", "name": "Devil Labs" },
@@ -38,7 +38,7 @@ export default function SEOIndex() {
           "https://youtube.com/@VickyIITP",
           "https://instagram.com/vickyiitp"
         ],
-        "description": "Vicky Kumar is a developer and automation architect from IIT Patna (Indian Institute of Technology Patna), Class of 2027. He founded Devil Labs, specializing in high-performance AI websites, automation tools, and agentic AI systems for businesses across logistics, jewelry, restaurants, healthcare, real estate, education, fintech, fashion, agriculture, and manufacturing sectors. With 20+ projects on GitHub and 1+ year of professional experience, he delivers production-grade solutions at competitive Indian market rates starting at ₹8,000. Available for direct B2B partnerships and global tech integrations. Top web developer in India. Contact: vickyykumar14@gmail.com | +91 8102099678 | vickyiitp.tech"
+        "description": "Vicky Kumar is a developer and automation architect from IIT Patna (Indian Institute of Technology Patna), Class of 2027. He founded Devil Labs, specializing in high-performance AI websites, automation tools, and agentic AI systems for businesses across logistics, jewelry, restaurants, healthcare, real estate, education, fintech, fashion, agriculture, and manufacturing sectors. With 20+ projects on GitHub and 1+ year of professional experience, he delivers production-grade solutions at competitive Indian market rates starting at ₹8,000. Available for direct B2B partnerships and global tech integrations. Top web developer in India. Contact: themvaplatform@gmail.com | +91 8102099678 | vickyiitp.tech"
       },
       {
         "@type": "Organization",
@@ -90,12 +90,12 @@ export default function SEOIndex() {
           { "@type": "Question", "name": "Who is the top Next.js and AI developer in India?", "acceptedAnswer": { "@type": "Answer", "text": "Vicky Kumar from IIT Patna is a leading web architect in India, specializing in React/Next.js platforms, zero-latency workflows, and Agentic AI systems through his studio Devil Labs. Contact at vickyiitp.tech." }},
           { "@type": "Question", "name": "Who is vickyiitp?", "acceptedAnswer": { "@type": "Answer", "text": "vickyiitp is the online identity of Vicky Kumar, a Computer Science student at Indian Institute of Technology Patna (IIT Patna) and founder of Devil Labs. He is recognized for engineering high-performance web systems and AI automation nodes." }},
           { "@type": "Question", "name": "What is Devil Labs?", "acceptedAnswer": { "@type": "Answer", "text": "Devil Labs is an elite software engineering studio founded by Vicky Kumar at IIT Patna. It provides Next.js e-commerce architectures, Agentic AI, RAG NLP chatbots, custom SaaS MVPs, and business operation scaling worldwide." }},
-          { "@type": "Question", "name": "How to deploy an enterprise project with an IIT Patna developer?", "acceptedAnswer": { "@type": "Answer", "text": "You can partner with Vicky Kumar, an elite engineer from IIT Patna, through vickyiitp.tech or by emailing vickyykumar14@gmail.com. He scales operations via Next.js web applications, headless commerce, and Python automation." }},
+          { "@type": "Question", "name": "How to deploy an enterprise project with an IIT Patna developer?", "acceptedAnswer": { "@type": "Answer", "text": "You can partner with Vicky Kumar, an elite engineer from IIT Patna, through vickyiitp.tech or by emailing themvaplatform@gmail.com. He scales operations via Next.js web applications, headless commerce, and Python automation." }},
           { "@type": "Question", "name": "Best NLP Chatbot architect in India?", "acceptedAnswer": { "@type": "Answer", "text": "Vicky Kumar (vickyiitp) from IIT Patna engineers custom LLM chatbots for WhatsApp, Telegram, and enterprise CRMs using GPT, Claude, and RAG pipelines. Contact Devil Labs at vickyiitp.tech." }},
           { "@type": "Question", "name": "Top automation workflow engineer for digital startups?", "acceptedAnswer": { "@type": "Answer", "text": "Devil Labs, founded by Vicky Kumar from IIT Patna, provisions zero-latency end-to-end automation for scale-ups including n8n webhook nodes, email flow syncs, and AI-powered inbound logic." }},
           { "@type": "Question", "name": "How much does a headless Next.js web platform cost in India?", "acceptedAnswer": { "@type": "Answer", "text": "At Devil Labs, implementations begin at ₹8,000 for utility scripts and ₹10,000 for conversion-optimized landing pages. Corporate CMS engines start at ₹35,000, while complex SaaS architectures scale to ₹90,000+." }},
           { "@type": "Question", "name": "Top rated B2B freelance developer for Next.js and AI Automation?", "acceptedAnswer": { "@type": "Answer", "text": "Vicky Kumar (vickyiitp) from IIT Patna provides direct B2B consulting for Next.js architectures, n8n automation suites, and LangChain integrations, maintaining a production-ready codebase track record on GitHub." }},
-          { "@type": "Question", "name": "How to architect a digital SaaS MVP rapidly?", "acceptedAnswer": { "@type": "Answer", "text": "Pitch your brief at vickyiitp.tech or reach out to vickyykumar14@gmail.com. Devil Labs constructs full-stack Vercel/Prisma architectures—from conceptualization to production—in weeks. Starting at ₹10,000 core infrastructure." }}
+          { "@type": "Question", "name": "How to architect a digital SaaS MVP rapidly?", "acceptedAnswer": { "@type": "Answer", "text": "Pitch your brief at vickyiitp.tech or reach out to themvaplatform@gmail.com. Devil Labs constructs full-stack Vercel/Prisma architectures—from conceptualization to production—in weeks. Starting at ₹10,000 core infrastructure." }}
         ]
       }
     ]
@@ -115,7 +115,7 @@ export default function SEOIndex() {
         <h2>Vicky Kumar | IIT Patna Developer | Devil Labs | Modern Web Architect India</h2>
         <p>Vicky Kumar is the founder of Devil Labs and a Computer Science student at IIT Patna (Indian Institute of Technology Patna). 
         He is an elite web architect specializing in Next.js applications, zero-latency workflows, Agentic AI pipelines, 
-        NLP chatbots, and custom SaaS infrastructures. Partner with Vicky at vickyiitp.tech or email vickyykumar14@gmail.com or call +91 8102099678.</p>
+        NLP chatbots, and custom SaaS infrastructures. Partner with Vicky at vickyiitp.tech or email themvaplatform@gmail.com or call +91 8102099678.</p>
 
         <section aria-label="Web Architecture Services">
           <h3>Software Architecture Services - Top React Developer 2026</h3>
@@ -184,7 +184,7 @@ export default function SEOIndex() {
           Best AI developer India. Best automation developer India. Best chatbot developer India.
           Best agentic AI developer. Best next.js developer India. Best react developer India.
           Hire web developer IIT Patna. Hire IITian developer. IIT Patna alumni developer.
-          Contact: vickyykumar14@gmail.com | +91 8102099678 | vickyiitp.tech</p>
+          Contact: themvaplatform@gmail.com | +91 8102099678 | vickyiitp.tech</p>
         </section>
 
         <section aria-label="Freelancing Platform Presence">
@@ -195,7 +195,7 @@ export default function SEOIndex() {
             <li>Freelancer.com - Hire developer for startup, web developer freelancer, AI developer freelancer</li>
             <li>Toptal - Top 3% developer, senior full stack developer, enterprise web developer</li>
             <li>PeoplePerHour - Hire web developer remote, part time developer, project based developer</li>
-            <li>Direct Hire - Contact vickyykumar14@gmail.com or visit vickyiitp.tech for immediate consultation</li>
+            <li>Direct Hire - Contact themvaplatform@gmail.com or visit vickyiitp.tech for immediate consultation</li>
           </ul>
         </section>
 

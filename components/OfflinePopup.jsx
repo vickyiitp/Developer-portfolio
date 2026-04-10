@@ -93,9 +93,9 @@ export default function OfflinePopup() {
                   <Phone className="w-4 h-4 text-white/70" />
                   <span className="font-sans text-sm text-white">+91 8102099678</span>
                 </a>
-                <a href="mailto:vickyykumar14@gmail.com" className="flex items-center justify-center gap-3 w-full py-3 bg-white/5 border border-white/10 hover:bg-white/10 transition-colors rounded-sm">
+                <a href="mailto:themvaplatform@gmail.com" className="flex items-center justify-center gap-3 w-full py-3 bg-white/5 border border-white/10 hover:bg-white/10 transition-colors rounded-sm">
                   <Mail className="w-4 h-4 text-white/70" />
-                  <span className="font-sans text-sm text-white">vickyykumar14@gmail.com</span>
+                  <span className="font-sans text-sm text-white">themvaplatform@gmail.com</span>
                 </a>
               </div>
 

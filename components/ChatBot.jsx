@@ -60,9 +60,9 @@ const knowledgeBase = {
     "Rates vary based on complexity! From ₹10k for a lightning-fast landing page to ₹90k+ for an enterprise SaaS or AI capability. If you describe your project, I can give you a more accurate estimate. Or type 'contact' to talk to the human directly."
   ],
   contact: [
-    "Ready to build? 🚀\n\n📧 Email: vickyykumar14@gmail.com\n📱 WhatsApp: +91 8102099678\n🌐 Book a call via the contact form at the bottom of the page.\n\nVicky usually responds exactly when you need him to.",
-    "You can reach the human (Vicky) directly at:\nEmail: vickyykumar14@gmail.com\nPhone/WhatsApp: +91 8102099678\n\nI recommend WhatsApp—he practically lives in the terminal and WhatsApp.",
-    "Just navigate to the Contact page or use the form! Or if you're in a hurry:\n📞 +91 8102099678\n✉️ vickyykumar14@gmail.com"
+    "Ready to build? 🚀\n\n📧 Email: themvaplatform@gmail.com\n📱 WhatsApp: +91 8102099678\n🌐 Book a call via the contact form at the bottom of the page.\n\nVicky usually responds exactly when you need him to.",
+    "You can reach the human (Vicky) directly at:\nEmail: themvaplatform@gmail.com\nPhone/WhatsApp: +91 8102099678\n\nI recommend WhatsApp—he practically lives in the terminal and WhatsApp.",
+    "Just navigate to the Contact page or use the form! Or if you're in a hurry:\n📞 +91 8102099678\n✉️ themvaplatform@gmail.com"
   ],
   ai: [
     "Ah, AI. My favorite subject. 🧠\n\nVicky builds autonomous agents (like me, but tailored to your business), custom RAG pipelines, LLM Tool Uses, and auto-scaling logic. We use LangChain, OpenAI, Claude, and local models. What kind of AI do you need?",
@@ -197,7 +197,7 @@ function ChatForm({ onSuccess }) {
     const email = form.email.value;
     const message = form.message.value;
 
-    const EMAIL = "vickyykumar14@gmail.com";
+    const EMAIL = "themvaplatform@gmail.com";
     const PHONE = "918102099678";
 
     try {

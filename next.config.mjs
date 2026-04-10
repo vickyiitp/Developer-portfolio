@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactCompiler: true,
+  allowedDevOrigins: ['10.223.53.46'],
 
   // Production optimizations
   compress: true,
@@ -10,10 +11,15 @@ const nextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
     minimumCacheTTL: 60 * 60 * 24 * 365, // 1 year
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+    ],
   },
 
-  /* 
-  async headers() {
+async headers() {
     return [
       {
         source: "/(.*)",
@@ -38,7 +44,6 @@ const nextConfig = {
       },
     ];
   },
-  */
 };
 
 export default nextConfig;

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import InteractiveTilt from "@/components/InteractiveTilt";
 
 export default function FounderNarrative() {
   return (
@@ -26,20 +27,23 @@ export default function FounderNarrative() {
             transition={{ duration: 0.8 }}
             className="flex flex-col gap-8"
           >
-            <div className="relative w-full aspect-square max-w-md mx-auto lg:mx-0 rounded-sm overflow-hidden border border-white/10 group">
-              <Image
-                src="/profile.jpg"
-                alt="Vicky - Founder of Devil Labs"
-                width={500}
-                height={500}
-                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out"
-              />
-              <div className="absolute inset-0 bg-linear-to-tr from-[#CFB53B]/20 to-transparent pointer-events-none mix-blend-overlay"></div>
-              <div className="absolute bottom-6 left-6 border-l-2 border-[#CFB53B] pl-4">
-                <p className="text-white font-heading text-2xl font-bold">Vicky</p>
-                <p className="text-white/60 font-sans text-xs tracking-widest uppercase">CEO, Devil Labs</p>
+            <InteractiveTilt className="relative w-full aspect-square max-w-md mx-auto lg:mx-0 rounded-[2.5rem] p-2 bg-gradient-to-tr from-pink-400 via-[#CFB53B] to-cyan-400 shadow-[0_20px_40px_rgba(207,181,59,0.25),inset_0_4px_15px_rgba(255,255,255,0.7)] group pointer-events-auto">
+              <div className="relative w-full h-full rounded-[2rem] overflow-hidden shadow-[inset_0_-4px_10px_rgba(0,0,0,0.5)] bg-black">
+                <Image
+                  src="/profile.jpg"
+                  alt="Vicky - Founder of Devil Labs"
+                  width={500}
+                  height={500}
+                  className="w-full h-full object-cover grayscale-0 transition-transform duration-700 ease-in-out group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-tr from-white/10 via-transparent to-white/30 pointer-events-none mix-blend-overlay rounded-[2rem]"></div>
+                <div className="absolute top-0 left-[15%] right-[15%] h-[15%] bg-gradient-to-b from-white/50 to-transparent rounded-full blur-[3px] pointer-events-none"></div>
+                <div className="absolute bottom-6 left-6 border-l-4 border-white pl-4 drop-shadow-md z-10" style={{ transform: "translateZ(40px)" }}>
+                  <p className="text-white font-heading text-2xl font-bold tracking-tight">Vicky</p>
+                  <p className="text-white/90 font-sans text-xs tracking-[0.2em] font-bold uppercase drop-shadow-md">CEO, Devil Labs</p>
+                </div>
               </div>
-            </div>
+            </InteractiveTilt>
 
             <p className="font-sans text-lg text-white/80 leading-relaxed font-light">
               From the lecture halls of IIT Patna to the high-stakes world of Devil Labs, Vicky engineers the future. A 2nd-year B.Sc. student specializing in Data Analytics, he combines academic rigor with real-world automation to build systems that scale effortlessly.

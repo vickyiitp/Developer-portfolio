@@ -5,7 +5,7 @@ import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 
 const PHONE = "918102099678";
-const EMAIL = "vickyykumar14@gmail.com";
+const EMAIL = "themvaplatform@gmail.com";
 
 const countryCodes = [
   { code: "+1", country: "USA/Canada" },
@@ -212,8 +212,7 @@ function ContactForm() {
               e.preventDefault();
               window.dispatchEvent(new Event("openProcessPopup"));
             }}
-          >Terms & Conditions</span>: 50% advance payment required to commence development, with timeline & scope adjustments clearly communicated in advance. Code/IP delivered upon final payout.
-        </label>
+            >Terms & Conditions</span>: 30% advance payment required to commence development, 30% in mid-milestone, and 40% upon final delivery. Code/IP delivered upon final payout.
       </div>
 
       {/* Submit Button */}

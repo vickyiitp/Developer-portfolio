@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import InteractiveTilt from "@/components/InteractiveTilt";
 
 /* Static imports for critical above-the-fold content */
 import SEOIndex from "@/components/SEOIndex";
@@ -12,54 +13,30 @@ import SEOIndex from "@/components/SEOIndex";
 const SkillsOrbit = dynamic(() => import("@/components/SkillsOrbit"), { ssr: false });
 const Testimonials = dynamic(() => import("@/components/Testimonials"), { ssr: false });
 const FounderNarrative = dynamic(() => import("@/components/FounderNarrative"), { ssr: false });
-const SocialBento = dynamic(() => import("@/components/SocialBento"), { ssr: false });
+const SocialPlatform = dynamic(() => import("@/components/SocialPlatform"), { ssr: false });
 const FAQAccordion = dynamic(() => import("@/components/FAQAccordion"), { ssr: false });
 const Footer = dynamic(() => import("@/components/Footer"), { ssr: false });
+
+const Hero3D = dynamic(() => import("@/components/Hero3D"), { ssr: false });
+const Workflow3D = dynamic(() => import("@/components/Workflow3D"), { ssr: false });
+const TechMarquee = dynamic(() => import("@/components/TechMarquee"), { ssr: false });
 
 /* ═══════════════════════════════════════
    WIREFRAME:
    1. HERO — Hook + CTA + Profile
+   1.5 TECH MARQUEE - Powered By Intelligence
    2. EFFICIENCY ENGINE — Workflow Process
    3. SERVICES — Editorial Magazine Layout
    4. SKILLS — Decorative Skill Bars
    5. PROJECTS — Case Studies & Portfolio
    6. TESTIMONIALS — Marquee Client Strip
    7. FOUNDER — IIT Patna Narrative
-   8. SOCIAL — Bento Grid Links
+   8. DIGITAL PRESENCE — 3D Social Ecosystem
    9. FAQ — Doubt Killer
    10. CONTACT — Lead Gen Form
    11. SEO — Hidden Schema Data
    12. FOOTER — Credits & Links
    ═══════════════════════════════════════ */
-
-
-/* ── 3D Candy Blobs (Pure CSS - GPU Accelerated) ── */
-function CandyBlobs() {
-  return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-      {/* Base ambient glow and grid mask for texture */}
-      <div suppressHydrationWarning className="absolute inset-0 bg-[#0A0A0A]/60 z-10 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_at_center,black_40%,transparent_100%)]" />
-      
-      {/* Huge central rotating blob (Gold) */}
-      <div 
-        className="candy-blob absolute top-1/2 left-[40%] -translate-x-1/2 -translate-y-1/2 w-[70vw] h-[70vw] md:w-[45vw] md:h-[45vw] bg-accent/30 rounded-full"
-        style={{ animationDelay: "0s" }}
-      />
-      
-      {/* Top right secondary blob (Soft Purple/Pink) */}
-      <div 
-        className="candy-blob absolute -top-[10%] -right-[5%] w-[60vw] h-[60vw] md:w-[35vw] md:h-[35vw] bg-[#a855f7]/20 rounded-full"
-        style={{ animationDelay: "-4s" }}
-      />
-      
-      {/* Bottom left third blob (Soft Blue/Cyan) */}
-      <div 
-        className="candy-blob absolute -bottom-[15%] -left-[10%] w-[60vw] h-[60vw] md:w-[35vw] md:h-[35vw] bg-[#06b6d4]/15 rounded-full"
-        style={{ animationDelay: "-8s" }}
-      />
-    </div>
-  );
-}
 
 
 export default function Home() {
@@ -72,13 +49,13 @@ export default function Home() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-y-12 md:gap-x-12 lg:gap-x-20 items-center py-20 relative px-6 md:px-16 min-h-[85vh]"
+        className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-y-12 md:gap-x-12 lg:gap-x-20 items-center py-20 relative px-6 md:px-16 min-h-[85vh] z-10"
       >
-        {/* Background Effects Layer */}
-        <CandyBlobs />
+        {/* React Three Fiber Hero 3D Component */}
+        <Hero3D />
 
         {/* Row 1, Col 1: Header & Title */}
-        <div className="order-1 md:order-none md:col-start-1 md:row-start-1 flex flex-col items-center md:items-start text-center md:text-left z-10">
+        <div className="order-1 md:order-none md:col-start-1 md:row-start-1 flex flex-col items-center md:items-start text-center md:text-left z-20 pointer-events-auto">
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -151,17 +128,25 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.8, duration: 1 }}
-            className="relative z-10 w-[200px] h-[260px] sm:w-[260px] sm:h-[340px] md:w-[320px] md:h-[420px] rounded-sm overflow-hidden border border-white/10 bg-white/5"
+            className="relative z-30 w-[200px] h-[260px] sm:w-[260px] sm:h-[340px] md:w-[320px] md:h-[420px] pointer-events-auto"
             aria-label="Vicky Kumar Profile"
           >
-            <Image
-              src="/profile.jpg"
-              alt="Vicky Kumar"
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
-              priority={true}
-              fill
-              sizes="(max-width: 640px) 200px, (max-width: 768px) 260px, 320px"
-            />
+            <InteractiveTilt className="w-full h-full rounded-[2rem] md:rounded-[3rem] p-1.5 md:p-2.5 bg-gradient-to-tr from-pink-400 via-[#CFB53B] to-cyan-400 shadow-[0_15px_35px_rgba(207,181,59,0.3),inset_0_4px_15px_rgba(255,255,255,0.6)]">
+              {/* Inner frame to hold the image, creating the 3D smooth border effect */}
+              <div className="w-full h-full relative rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden shadow-[inset_0_-4px_10px_rgba(0,0,0,0.5)] bg-black" style={{ transform: "translateZ(30px)" }}>
+                <Image
+                  src="/profile.jpg"
+                  alt="Vicky Kumar"
+                  className="w-full h-full object-cover transition-all duration-1000 mix-blend-normal"
+                  priority={true}
+                  fill
+                  sizes="(max-width: 640px) 200px, (max-width: 768px) 260px, 320px"
+                />
+                {/* Glossy Candy Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-white/10 via-transparent to-white/40 mix-blend-overlay pointer-events-none rounded-[1.5rem] md:rounded-[2.5rem]"></div>
+                <div className="absolute top-0 left-[10%] right-[10%] h-[15%] bg-gradient-to-b from-white/40 to-transparent rounded-full blur-[2px] pointer-events-none"></div>
+              </div>
+            </InteractiveTilt>
           </motion.div>
         </div>
 
@@ -170,7 +155,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
-          className="order-3 md:order-none md:col-start-1 md:row-start-2 flex flex-col items-center md:items-start text-center md:text-left z-10"
+          className="order-3 md:order-none md:col-start-1 md:row-start-2 flex flex-col items-center md:items-start text-center md:text-left z-30 pointer-events-auto"
         >
           <p className="font-sans text-sm md:text-base text-white/50 font-light leading-relaxed max-w-md mb-10">
             Vicky architectures high-performance digital systems. Bridging AI automation and conversion-focused web engines for maximum profitability.
@@ -178,23 +163,27 @@ export default function Home() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-            <motion.a
-              href="/contact"
-              whileHover={{ y: -3, boxShadow: "0 8px 30px rgba(207,181,59,0.2)" }}
-              className="w-full sm:w-auto px-8 py-3.5 bg-accent text-black font-sans font-medium text-sm md:text-base tracking-wide hover:bg-white hover:text-black transition-all duration-300 text-center"
-              aria-label="Request Consultation with Vicky, IIT Patna Developer"
-            >
-              Request Consultation
-            </motion.a>
-            <motion.a
-              href="/resume.pdf"
-              download
-              whileHover={{ y: -3, borderColor: "rgba(207,181,59,0.6)" }}
-              className="w-full sm:w-auto px-8 py-3.5 bg-transparent border border-accent text-white font-sans font-light text-sm md:text-base tracking-wide hover:bg-accent/10 transition-all duration-300 text-center"
-              aria-label="Download Resume of Vicky, IIT Patna Developer"
-            >
-              Download Resume
-            </motion.a>
+            <motion.div whileHover={{ y: -3, boxShadow: "0 8px 30px rgba(207,181,59,0.2)" }} className="w-full sm:w-auto">
+              <Link
+                href="/contact"
+                className="block w-full sm:w-auto px-8 py-3.5 bg-accent text-black font-sans font-medium text-sm md:text-base tracking-wide hover:bg-white hover:text-black transition-all duration-300 text-center rounded-sm"
+                aria-label="Request Consultation with Vicky, IIT Patna Developer"
+                prefetch={true}
+              >
+                Request Consultation
+              </Link>
+            </motion.div>
+            <motion.div whileHover={{ y: -3, borderColor: "rgba(207,181,59,0.6)" }} className="w-full sm:w-auto">
+              <Link
+                href="/resume.pdf"
+                className="block w-full sm:w-auto px-8 py-3.5 bg-transparent border border-accent text-white font-sans font-light text-sm md:text-base tracking-wide hover:bg-accent/10 transition-all duration-300 text-center rounded-sm"
+                aria-label="Download Resume of Vicky, IIT Patna Developer"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Download Resume
+              </Link>
+            </motion.div>
           </div>
 
           {/* Mobile Hero Stats (Visible only on small screens) */}
@@ -218,6 +207,11 @@ export default function Home() {
 
       </motion.section>
 
+      {/* ═══ 1.5 TECH MARQUEE ═══ */}
+      <TechMarquee />
+
+      {/* ═══ 2. 3D WORKFLOW PIPELINE ═══ */}
+      <Workflow3D />
 
       {/* ═══ 4. SKILLS ORBIT ═══ */}
       <SkillsOrbit />
@@ -237,7 +231,7 @@ export default function Home() {
         className="w-full relative overflow-hidden"
       >
         <FounderNarrative />
-        <SocialBento />
+        <SocialPlatform />
       </motion.div>
 
       {/* ═══ 8. FAQ — DOUBT KILLER ═══ */}
