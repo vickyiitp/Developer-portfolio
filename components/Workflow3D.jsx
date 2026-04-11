@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useMemo } from "react";
+import { useRef, useMemo, useEffect, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Text, Line, Sphere, Float, Environment, PerspectiveCamera, Html } from "@react-three/drei";
 import * as THREE from "three";
@@ -70,7 +70,7 @@ function DataParticles({ start, end, color }) {
   );
 }
 
-function Scene() {
+function Scene({ isMobile }) {
   const nodes = [
     { pos: [-3, 0.5, 0], color: "#ffffff", label: "Input / Trigger" },
     { pos: [0, -0.5, 0], color: "#CFB53B", label: "AI Automation Core" },
@@ -81,7 +81,7 @@ function Scene() {
     <>
       <ambientLight intensity={0.5} />
       <pointLight position={[0, 5, 0]} intensity={1} color="#CFB53B" />
-      <Environment files="/potsdamer_platz_1k.hdr" />
+      {!isMobile && <Environment files="/potsdamer_platz_1k.hdr" />}
 
       <Float speed={2} rotationIntensity={0.2} floatIntensity={0.5}>
         <group rotation={[0.2, -0.1, 0]}>
@@ -114,6 +114,15 @@ function Scene() {
 }
 
 export default function Workflow3D() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   return (
     <section className="w-full py-24 md:py-32 relative bg-[#060606] overflow-hidden border-t border-white/5">
       
@@ -149,8 +158,13 @@ export default function Workflow3D() {
           {/* Subtle grid texture overlay */}
           <div className="absolute inset-0 z-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
           
-          <Canvas dpr={[1, 1.5]} gl={{ powerPreference: "default" }} camera={{ position: [0, 0, 7], fov: 40 }} className="z-10 outline-none">
-            <Scene />
+          <Canvas 
+            dpr={isMobile ? [1, 1] : [1, 1.5]} 
+            gl={{ powerPreference: "default", antialias: !isMobile }} 
+            camera={{ position: [0, 0, 7], fov: 40 }} 
+            className="z-10 outline-none"
+          >
+            <Scene isMobile={isMobile} />
           </Canvas>
 
           {/* Interactive Hint */}

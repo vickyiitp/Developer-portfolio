@@ -1,11 +1,11 @@
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Float, MeshTransmissionMaterial, ContactShadows, Environment, Stars, PerspectiveCamera } from "@react-three/drei";
 import * as THREE from 'three';
 
-function InteractiveScene() {
+function InteractiveScene({ isMobile }) {
   const coreRef = useRef();
   const lightRef = useRef();
   const groupRef = useRef();
@@ -62,17 +62,17 @@ function InteractiveScene() {
       {/* Floating Core */}
       <Float speed={3} rotationIntensity={1.5} floatIntensity={1.5}>
         {/* Outer Glass Shell */}
-        <mesh ref={coreRef} castShadow receiveShadow>
+        <mesh ref={coreRef} castShadow={!isMobile} receiveShadow={!isMobile}>
           <icosahedronGeometry args={[1.6, 0]} />
           <MeshTransmissionMaterial 
-            backside 
-            samples={2} 
-            resolution={512}
+            backside={!isMobile}
+            samples={isMobile ? 1 : 2} 
+            resolution={isMobile ? 128 : 512}
             thickness={0.8} 
             roughness={0.1} 
-            transmission={0.99} 
+            transmission={isMobile ? 0.9 : 0.99} 
             ior={1.2} 
-            chromaticAberration={0.3} 
+            chromaticAberration={isMobile ? 0.1 : 0.3} 
             anisotropy={0.2}
             color="#cfb53b"
           />
@@ -121,29 +121,38 @@ function OrbitingIcons() {
 }
 
 export default function Hero3D() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   return (
     <div className="absolute inset-0 w-full h-full z-0 overflow-hidden pointer-events-none">
       <Canvas
-        shadows={{ type: THREE.PCFShadowMap }}
-        dpr={[1, 1.5]}
+        shadows={!isMobile ? { type: THREE.PCFShadowMap } : false}
+        dpr={isMobile ? [1, 1] : [1, 1.5]}
         camera={{ position: [0, 0, 6], fov: 45 }}
-        gl={{ alpha: true, antialias: true, powerPreference: "default" }}
+        gl={{ alpha: true, antialias: !isMobile, powerPreference: "default" }}
       >
         <PerspectiveCamera makeDefault position={[0, 0, 6]} fov={50} />
-        
+
         {/* Deep Space Background for High End luxury feel */}
-        <Stars radius={100} depth={50} count={2500} factor={6} saturation={0} fade speed={1.5} />
-        
+        {!isMobile && <Stars radius={100} depth={50} count={2500} factor={6} saturation={0} fade speed={1.5} />}
+
         <ambientLight intensity={0.5} />
         <pointLight position={[-10, -10, -10]} intensity={1} color="#ffffff" />
         <directionalLight position={[0, 5, 0]} intensity={0.5} color="#ffffff" />
 
         {/* Interactive Interactive Scene matching mouse */}
-        <InteractiveScene />
+        <InteractiveScene isMobile={isMobile} />
 
         {/* Soft shadow directly below the core */}
-        <ContactShadows resolution={256} frames={1} position={[0, -2.5, 0]} opacity={0.6} scale={10} blur={2.5} far={4} color="#cfb53b" />
-        
+        {!isMobile && <ContactShadows resolution={256} frames={1} position={[0, -2.5, 0]} opacity={0.6} scale={10} blur={2.5} far={4} color="#cfb53b" />}
+
       </Canvas>
     </div>
   );
