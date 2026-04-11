@@ -29,11 +29,9 @@ function InteractiveScene() {
     };
 
     window.addEventListener("pointermove", handleMove);
-    window.addEventListener("touchmove", handleMove, { passive: true });
 
     return () => {
       window.removeEventListener("pointermove", handleMove);
-      window.removeEventListener("touchmove", handleMove);
     };
   }, []);
 
@@ -68,7 +66,8 @@ function InteractiveScene() {
           <icosahedronGeometry args={[1.6, 0]} />
           <MeshTransmissionMaterial 
             backside 
-            samples={4} 
+            samples={2} 
+            resolution={512}
             thickness={0.8} 
             roughness={0.1} 
             transmission={0.99} 
@@ -126,9 +125,9 @@ export default function Hero3D() {
     <div className="absolute inset-0 w-full h-full z-0 overflow-hidden pointer-events-none">
       <Canvas
         shadows={{ type: THREE.PCFShadowMap }}
-        dpr={[1, 2]}
+        dpr={[1, 1.5]}
         camera={{ position: [0, 0, 6], fov: 45 }}
-        gl={{ alpha: true, antialias: true }}
+        gl={{ alpha: true, antialias: true, powerPreference: "default" }}
       >
         <PerspectiveCamera makeDefault position={[0, 0, 6]} fov={50} />
         
@@ -143,10 +142,8 @@ export default function Hero3D() {
         <InteractiveScene />
 
         {/* Soft shadow directly below the core */}
-        <ContactShadows position={[0, -2.5, 0]} opacity={0.6} scale={10} blur={2.5} far={4} color="#cfb53b" />
+        <ContactShadows resolution={256} frames={1} position={[0, -2.5, 0]} opacity={0.6} scale={10} blur={2.5} far={4} color="#cfb53b" />
         
-        {/* Soft environment lighting to interact with glass */}
-        <Environment files="/potsdamer_platz_1k.hdr" />
       </Canvas>
     </div>
   );

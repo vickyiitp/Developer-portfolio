@@ -43,9 +43,7 @@ export default function InteractiveTilt({ children, className = "" }) {
   return (
     <motion.div
       onPointerMove={handlePointerMove}
-      onTouchMove={handlePointerMove}
       onPointerLeave={handlePointerLeave}
-      onTouchEnd={handlePointerLeave}
       style={{
         rotateX,
         rotateY,

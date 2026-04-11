@@ -149,7 +149,7 @@ export default function Workflow3D() {
           {/* Subtle grid texture overlay */}
           <div className="absolute inset-0 z-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
           
-          <Canvas dpr={[1, 2]} camera={{ position: [0, 0, 7], fov: 40 }} className="z-10 outline-none">
+          <Canvas dpr={[1, 1.5]} gl={{ powerPreference: "default" }} camera={{ position: [0, 0, 7], fov: 40 }} className="z-10 outline-none">
             <Scene />
           </Canvas>
 
