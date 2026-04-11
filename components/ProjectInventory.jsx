@@ -3,7 +3,7 @@
 
 import { useState } from "react";
 import { motion, useMotionValue, useSpring, useTransform, AnimatePresence } from "framer-motion";
-import { FiGithub, FiExternalLink, FiCode } from "react-icons/fi";
+import { FiGithub, FiExternalLink, FiCode, FiLinkedin, FiInstagram } from "react-icons/fi";
 
 const projects = [
   // --- Landing Pages ---
@@ -204,10 +204,34 @@ export default function ProjectInventory() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-              className="font-sans text-white/50 text-base max-w-md leading-relaxed"
+              className="font-sans text-white/50 text-base max-w-md leading-relaxed mb-6"
             > 
               An archive of proprietary architectures, elite automation pipelines, and high-performance React integrations.
             </motion.p>
+            <motion.div 
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+              className="flex items-center gap-4"
+            >
+              <a 
+                href="https://www.linkedin.com/company/devillabs/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-white/60 hover:text-accent transition-colors duration-300 flex items-center gap-2 font-mono text-[10px] tracking-widest uppercase border border-white/10 px-4 py-2 rounded-full hover:border-accent hover:bg-accent/5"
+              >
+                <FiLinkedin className="text-sm" /> LinkedIn
+              </a>
+              <a 
+                href="https://www.instagram.com/devillabs/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-white/60 hover:text-accent transition-colors duration-300 flex items-center gap-2 font-mono text-[10px] tracking-widest uppercase border border-white/10 px-4 py-2 rounded-full hover:border-accent hover:bg-accent/5"
+              >
+                <FiInstagram className="text-sm" /> Instagram
+              </a>
+            </motion.div>
           </div>
 
           <motion.div 

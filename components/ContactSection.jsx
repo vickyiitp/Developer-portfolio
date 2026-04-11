@@ -212,7 +212,8 @@ function ContactForm() {
               e.preventDefault();
               window.dispatchEvent(new Event("openProcessPopup"));
             }}
-            >Terms & Conditions</span>: 30% advance payment required to commence development, 30% in mid-milestone, and 40% upon final delivery. Code/IP delivered upon final payout.
+            >Terms &amp; Conditions</span>: 30% advance payment required to commence development, 30% in mid-milestone, and 40% upon final delivery. Code/IP delivered upon final payout.
+        </label>
       </div>
 
       {/* Submit Button */}

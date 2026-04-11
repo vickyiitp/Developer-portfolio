@@ -75,6 +75,12 @@ export default function Footer() {
                   {item}
                 </Link>
               ))}
+              <Link href="/privacy" prefetch={true} className="text-white/70 hover:text-[#CFB53B] text-sm font-light transition-colors w-fit mt-2">
+                Privacy Policy
+              </Link>
+              <Link href="/terms" prefetch={true} className="text-white/70 hover:text-[#CFB53B] text-sm font-light transition-colors w-fit">
+                Terms &amp; Conditions
+              </Link>
             </div>
           </div>
 
@@ -85,7 +91,7 @@ export default function Footer() {
               <SocialLink href="https://wa.me/918102099678" label="WhatsApp: +91 8102099678" highlight />
               <SocialLink href="https://linkedin.com/in/vickyiitp" label="LinkedIn" />
               <SocialLink href="https://github.com/vickyiitp" label="GitHub" />
-              <SocialLink href="mailto:vickyykumar14@gmail.com" label="Email: vickyykumar14@gmail.com" />
+              <SocialLink href="mailto:themvaplatform@gmail.com" label="Email: themvaplatform@gmail.com" />
             </div>
           </div>
         </div>
