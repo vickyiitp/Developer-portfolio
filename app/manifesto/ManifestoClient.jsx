@@ -52,7 +52,7 @@ export default function ManifestoClient() {
   const [activeStory, setActiveStory] = useState(DETAILED_STORIES[0]);
 
   return (
-    <div ref={containerRef} className="min-h-screen bg-[#050505] text-[#e0e0e0] font-sans selection:bg-accent selection:text-black overflow-hidden relative">
+    <div ref={containerRef} className="min-h-screen bg-[#050505] text-[#e0e0e0] font-sans selection:bg-accent selection:text-black overflow-hidden relative" style={{ position: "relative" }}>
       
       {/* Progress Bar */}
       <motion.div 
