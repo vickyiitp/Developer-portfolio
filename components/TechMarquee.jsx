@@ -61,23 +61,13 @@ export default function TechMarquee() {
         <div className="absolute right-0 top-0 w-32 md:w-64 h-full bg-gradient-to-l from-[#050505] to-transparent z-10 pointer-events-none"></div>
 
         {/* Scrolling Track */}
-        <motion.div 
-          className="flex whitespace-nowrap gap-8 md:gap-12 px-6 items-center"
-          animate={{ x: ["0%", "-50%"] }}
-          transition={{
-            ease: "linear",
-            duration: 40,
-            repeat: Infinity,
-          }}
-          style={{ width: "max-content" }}
+        <div
+          className="flex whitespace-nowrap gap-8 md:gap-12 px-6 items-center w-max animate-marquee"
+          style={{ animationDuration: "50s" }}
         >
-          {/* Pause on hover achieved via CSS peer group hover override if needed, 
-              but framer motion takes JS control. We can rely on a smooth consistent scroll for now, 
-              or use a CSS animation class in tailwind. Since Framer Motion is used, we'll keep the infinite scroll active 
-              and rely on the high-fidelity hover effects on the items. */}
-          
+
           {duplicatedTools.map((tool, index) => (
-            <div 
+            <div
               key={index} 
               className="group relative flex items-center justify-center p-6 bg-white/[0.02] border border-white/5 rounded-2xl backdrop-blur-sm cursor-pointer transition-all duration-500 hover:bg-white/[0.05] hover:border-white/20 hover:scale-110 hover:shadow-[0_0_30px_rgba(207,181,59,0.15)] hover:z-20 min-w-[120px] md:min-w-[160px]"
             >
@@ -98,9 +88,9 @@ export default function TechMarquee() {
               </div>
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
-      
+
     </section>
   );
 }
